@@ -146,8 +146,11 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
             objetoPiso = nuevoArray![indice] as! [String: Any]
         }
         let nombre:String = objetoPiso["nombre"] as! String
+        let horario:String = objetoPiso["horario"] as! String
         
         siguienteVista.nombre = nombre
+        siguienteVista.horario = horario
+        
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }

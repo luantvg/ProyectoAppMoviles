@@ -11,12 +11,17 @@ import UIKit
 class DetalleViewController: UIViewController {
 
     var nombre:String=""
-    @IBOutlet weak var laMarca: UILabel!
+    var horario:String=""
+    
+    @IBOutlet weak var laNombre: UILabel!
+    @IBOutlet weak var laHorario: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        laMarca.text = nombre
+        laNombre.text = nombre
+        laHorario.text = horario
     }
 
     override func didReceiveMemoryWarning() {
