@@ -53,7 +53,7 @@
                             <constraint firstItem="R5W-E1-MPQ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="160.5" id="ssh-Y5-JFB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homeIcon" selectedImage="homeIcon" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -309,11 +309,11 @@
             </objects>
             <point key="canvasLocation" x="-585" y="-322"/>
         </scene>
-        <!--Salone-->
+        <!--Salones-->
         <scene sceneID="X6H-5M-f5s">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OHW-2k-eMC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Salone" id="twk-0G-D06"/>
+                    <tabBarItem key="tabBarItem" title="Salones" image="building" selectedImage="building" id="twk-0G-D06"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tCw-gQ-uDU">
@@ -349,7 +349,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="building" width="12" height="12"/>
+        <image name="homeIcon" width="12" height="12"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
