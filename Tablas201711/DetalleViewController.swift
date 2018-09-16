@@ -10,13 +10,13 @@ import UIKit
 
 class DetalleViewController: UIViewController {
 
-    var marca:String="VW"
+    var nombre:String=""
     @IBOutlet weak var laMarca: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        laMarca.text = marca
+        laMarca.text = nombre
     }
 
     override func didReceiveMemoryWarning() {

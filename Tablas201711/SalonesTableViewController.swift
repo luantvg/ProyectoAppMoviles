@@ -145,9 +145,9 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
             indice = indexPath.row
             objetoPiso = nuevoArray![indice] as! [String: Any]
         }
-        let s:String = objetoPiso["nombre"] as! String
+        let nombre:String = objetoPiso["nombre"] as! String
         
-        siguienteVista.marca = s
+        siguienteVista.nombre = nombre
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }
