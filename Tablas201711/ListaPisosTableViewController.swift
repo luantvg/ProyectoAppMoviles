@@ -1,5 +1,5 @@
 //
-//  ListaMarcasTableViewController.swift
+//  ListaPisossTableViewController.swift
 //  Tablas201711
 //
 //  Created by molina on 20/02/17.
@@ -7,38 +7,30 @@
 //
 
 import UIKit
-// paso 1: agregar el prtotocolo UISearchResultsUpdating
+
 class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdating {
-    //paso 2: crear una variable para almacenar lo datos que son filtrados
+
     var datosFiltrados = [Any]()
-    //paso 3: crear un control de búsqueda
+
     let searchController = UISearchController(searchResultsController: nil)
     
-    //paso 4: crear la función updateSearchResults para cumplir con el protocolo
-    //UISearchResultsUpdating
     func updateSearchResults(for searchController: UISearchController) {
         
-        // si la caja de búsuqeda es vacía, entonces mostrar todos los resultados
         if searchController.searchBar.text! == "" {
             datosFiltrados = nuevoArray!
         } else {
-            // Filtrar los resultados de acuerdo al texto escrito en la caja que es obtenido a través del parámetro $0
+
             datosFiltrados = nuevoArray!.filter {
-                let objetoMarca=$0 as! [String:Any];
-                let s:String = objetoMarca["marca"] as! String;
+                let objetoPiso=$0 as! [String:Any];
+                let s:String = objetoPiso["piso"] as! String;
                 return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
         }
         
         self.tableView.reloadData()
     }
     
-    let direccion="http://martinmolina.com.mx/201813/data/datos.json"
-    /*
-    private let datos = [
-        "Ford", "BMW", "Audi", "VW", "Chrysler", "Nissan", "Peugeot", "Renault", "Seat", "Citroen"
-    ]
-    let datosJSON = "[ {\"marca\": \"FORD\", \"agencias\": 21}, {\"marca\": \"BMW\", \"agencias\": 35} ]"
-    */
+    let direccion="http://martinmolina.com.mx/201813/data/pisos.json"
+    
     var nuevoArray:[Any]?
     
     func JSONParseArray(_ string: String) -> [AnyObject]{
@@ -111,103 +103,32 @@ class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdat
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EntradaMarca", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EntradaPiso", for: indexPath)
 
-        //paso 12 remplazar el uso de nuevoArray por datosFitrados
-        //Usar el objeto marca para la obtencion de los datos
-        let objetoMarca = datosFiltrados[indexPath.row] as! [String: Any]
-        let s:String = objetoMarca["marca"] as! String
+        let objetoPiso = datosFiltrados[indexPath.row] as! [String: Any]
+        let s:String = objetoPiso["piso"] as! String
         
         cell.textLabel?.text=s
         
         return cell
     }
  
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    
-
-    // Paso 13 comentar todo el método de prepare for segue
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var indice = 0
-        var objetoMarca = [String:Any]()
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        let siguienteVista = segue.destination as! DetalleViewController
-        if (self.searchDisplayController?.isActive)!
-        {
-            indice = (self.searchDisplayController?.searchResultsTableView.indexPathForSelectedRow?.row)!
-            objetoMarca = datosFiltrados[indice] as! [String: Any]
-            
-        }
-        else
-        {
-            indice = (self.tableView.indexPathForSelectedRow?.row)!
-            objetoMarca = nuevoArray![indice] as! [String: Any]
-        }
-     
-        let s:String = objetoMarca["marca"] as! String
-        
-        siguienteVista.marca = s
-    }
-    */
-    
-    //Paso 13: eliminar el segue de entre la tabla y el detalle
-    //Paso 14: crear la funcion disSelectRow
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var indice = 0
-        var objetoMarca = [String:Any]()
-        //Paso 15: crear un identificador para el controlador de vista a nivel detalle
+        var objetoPiso = [String:Any]()
         let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Detalle") as! DetalleViewController
-        //Verificar si la vista actual es la de búsqueda
         if (self.searchController.isActive)
         {
             indice = indexPath.row
-            objetoMarca = datosFiltrados[indice] as! [String: Any]
+            objetoPiso = datosFiltrados[indice] as! [String: Any]
             
         }
-        //sino utilizar la vista sin filtro
         else
         {
             indice = indexPath.row
-            objetoMarca = nuevoArray![indice] as! [String: Any]
+            objetoPiso = nuevoArray![indice] as! [String: Any]
         }
-        let s:String = objetoMarca["marca"] as! String
+        let s:String = objetoPiso["piso"] as! String
         
         siguienteVista.marca = s
         self.navigationController?.pushViewController(siguienteVista, animated: true)
