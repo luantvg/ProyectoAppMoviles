@@ -10,7 +10,7 @@ import UIKit
 
 class SalonesTableViewController: UITableViewController, UISearchResultsUpdating {
 
-    var piso:String="VW"
+    var piso:String=""
     
     var datosFiltrados = [Any]()
     
@@ -24,14 +24,12 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
             
             datosFiltrados = nuevoArray!.filter {
                 let objetoPiso=$0 as! [String:Any];
-                let s:String = objetoPiso["piso"] as! String;
+                let s:String = objetoPiso["nombre"] as! String;
                 return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
         }
         
         self.tableView.reloadData()
     }
-    
-    let direccion="http://martinmolina.com.mx/201813/data/pisos.json"
     
     var nuevoArray:[Any]?
     
@@ -55,6 +53,23 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var direccion = ""
+        
+        if(piso == "Primer piso") {
+            direccion="http://martinmolina.com.mx/201813/data/SalonesPorPiso/piso1.json"
+        }
+        if(piso == "Segundo piso") {
+            direccion="http://martinmolina.com.mx/201813/data/SalonesPorPiso/piso2.json"
+        }
+        if(piso == "Tercer piso") {
+            direccion="http://martinmolina.com.mx/201813/data/SalonesPorPiso/piso3.json"
+        }
+        if(piso == "Cuarto piso") {
+            direccion="http://martinmolina.com.mx/201813/data/SalonesPorPiso/piso4.json"
+        }
+        
+        print(piso)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -108,7 +123,7 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
         let cell = tableView.dequeueReusableCell(withIdentifier: "EntradaSalon", for: indexPath)
         
         let objetoPiso = datosFiltrados[indexPath.row] as! [String: Any]
-        let s:String = objetoPiso["piso"] as! String
+        let s:String = objetoPiso["nombre"] as! String
         
         cell.textLabel?.text=s
         
@@ -130,7 +145,7 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
             indice = indexPath.row
             objetoPiso = nuevoArray![indice] as! [String: Any]
         }
-        let s:String = objetoPiso["piso"] as! String
+        let s:String = objetoPiso["nombre"] as! String
         
         siguienteVista.marca = s
         self.navigationController?.pushViewController(siguienteVista, animated: true)
