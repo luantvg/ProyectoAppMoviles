@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="448"/>
+            <point key="canvasLocation" x="1025" y="463"/>
         </scene>
         <!--Lista Pisos Table View Controller-->
         <scene sceneID="STQ-qZ-UdQ">
@@ -209,16 +209,16 @@
             </objects>
             <point key="canvasLocation" x="2318" y="1073"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Salones Table View Controller-->
         <scene sceneID="jZM-DF-rXO">
             <objects>
-                <tableViewController id="x6e-Xp-YJV" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Salones" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x6e-Xp-YJV" customClass="SalonesTableViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="46R-aS-tpg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Quf-4i-0SE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntradaSalon" id="Quf-4i-0SE" userLabel="EntradaSalon">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Quf-4i-0SE" id="XT8-DH-mKZ">
@@ -235,7 +235,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTc-tO-UME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3052" y="1073"/>
+            <point key="canvasLocation" x="1497" y="1930"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

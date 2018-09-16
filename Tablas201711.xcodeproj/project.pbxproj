@@ -16,6 +16,7 @@
 		356B4D481E5B8F94002DD52B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D471E5B8F94002DD52B /* Assets.xcassets */; };
 		356B4D4B1E5B8F94002DD52B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D491E5B8F94002DD52B /* LaunchScreen.storyboard */; };
 		3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */; };
+		FAC30FB6214EE8C0000BE765 /* SalonesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC30FB5214EE8C0000BE765 /* SalonesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		356B4D4A1E5B8F94002DD52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356B4D4C1E5B8F94002DD52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
+		FAC30FB5214EE8C0000BE765 /* SalonesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				356B4D401E5B8F94002DD52B /* FirstViewController.swift */,
 				356B4D421E5B8F94002DD52B /* SecondViewController.swift */,
 				356B4D441E5B8F94002DD52B /* Main.storyboard */,
+				FAC30FB5214EE8C0000BE765 /* SalonesTableViewController.swift */,
 				356B4D471E5B8F94002DD52B /* Assets.xcassets */,
 				356B4D491E5B8F94002DD52B /* LaunchScreen.storyboard */,
 				356B4D4C1E5B8F94002DD52B /* Info.plist */,
@@ -154,6 +157,7 @@
 				356B4D3F1E5B8F94002DD52B /* AppDelegate.swift in Sources */,
 				3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */,
 				356B4D411E5B8F94002DD52B /* FirstViewController.swift in Sources */,
+				FAC30FB6214EE8C0000BE765 /* SalonesTableViewController.swift in Sources */,
 				3546B96E1E5B96FD0035B84F /* ListaPisosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

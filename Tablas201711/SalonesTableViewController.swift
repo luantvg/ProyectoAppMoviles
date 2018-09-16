@@ -1,17 +1,19 @@
 //
-//  ListaPisossTableViewController.swift
+//  SalonesTableViewController.swift
 //  Tablas201711
 //
-//  Created by molina on 20/02/17.
-//  Copyright © 2017 Tec de Monterrey. All rights reserved.
+//  Created by macbook on 16/09/18.
+//  Copyright © 2018 Tec de Monterrey. All rights reserved.
 //
 
 import UIKit
 
-class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdating {
+class SalonesTableViewController: UITableViewController, UISearchResultsUpdating {
 
+    var piso:String="VW"
+    
     var datosFiltrados = [Any]()
-
+    
     let searchController = UISearchController(searchResultsController: nil)
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -19,7 +21,7 @@ class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdat
         if searchController.searchBar.text! == "" {
             datosFiltrados = nuevoArray!
         } else {
-
+            
             datosFiltrados = nuevoArray!.filter {
                 let objetoPiso=$0 as! [String:Any];
                 let s:String = objetoPiso["piso"] as! String;
@@ -53,10 +55,10 @@ class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
@@ -83,28 +85,28 @@ class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdat
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "EntradaMarca")
         
     }
- 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //paso 11 remplazar el uso de nuevoArray por datosFiltrados
         return (datosFiltrados.count)
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EntradaPiso", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EntradaSalon", for: indexPath)
+        
         let objetoPiso = datosFiltrados[indexPath.row] as! [String: Any]
         let s:String = objetoPiso["piso"] as! String
         
@@ -112,12 +114,11 @@ class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdat
         
         return cell
     }
- 
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var indice = 0
         var objetoPiso = [String:Any]()
-        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Salones") as! SalonesTableViewController
-        
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Detalle") as! DetalleViewController
         if (self.searchController.isActive)
         {
             indice = indexPath.row
@@ -131,9 +132,8 @@ class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdat
         }
         let s:String = objetoPiso["piso"] as! String
         
-        siguienteVista.piso = s
+        siguienteVista.marca = s
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }
-
 }
