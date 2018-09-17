@@ -13,7 +13,7 @@
 		356B4D411E5B8F94002DD52B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B4D401E5B8F94002DD52B /* FirstViewController.swift */; };
 		356B4D431E5B8F94002DD52B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B4D421E5B8F94002DD52B /* SecondViewController.swift */; };
 		356B4D461E5B8F94002DD52B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D441E5B8F94002DD52B /* Main.storyboard */; };
-		356B4D481E5B8F94002DD52B /* homeIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D471E5B8F94002DD52B /* homeIcon.xcassets */; };
+		356B4D481E5B8F94002DD52B /* cdtTec.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D471E5B8F94002DD52B /* cdtTec.xcassets */; };
 		356B4D4B1E5B8F94002DD52B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D491E5B8F94002DD52B /* LaunchScreen.storyboard */; };
 		3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */; };
 		FAC30FB6214EE8C0000BE765 /* SalonesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC30FB5214EE8C0000BE765 /* SalonesTableViewController.swift */; };
@@ -27,7 +27,7 @@
 		356B4D401E5B8F94002DD52B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		356B4D421E5B8F94002DD52B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		356B4D451E5B8F94002DD52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		356B4D471E5B8F94002DD52B /* homeIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = homeIcon.xcassets; sourceTree = "<group>"; };
+		356B4D471E5B8F94002DD52B /* cdtTec.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = cdtTec.xcassets; sourceTree = "<group>"; };
 		356B4D4A1E5B8F94002DD52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356B4D4C1E5B8F94002DD52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 				356B4D421E5B8F94002DD52B /* SecondViewController.swift */,
 				356B4D441E5B8F94002DD52B /* Main.storyboard */,
 				FAC30FB5214EE8C0000BE765 /* SalonesTableViewController.swift */,
-				356B4D471E5B8F94002DD52B /* homeIcon.xcassets */,
+				356B4D471E5B8F94002DD52B /* cdtTec.xcassets */,
 				356B4D491E5B8F94002DD52B /* LaunchScreen.storyboard */,
 				356B4D4C1E5B8F94002DD52B /* Info.plist */,
 				3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */,
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				356B4D4B1E5B8F94002DD52B /* LaunchScreen.storyboard in Resources */,
-				356B4D481E5B8F94002DD52B /* homeIcon.xcassets in Resources */,
+				356B4D481E5B8F94002DD52B /* cdtTec.xcassets in Resources */,
 				356B4D461E5B8F94002DD52B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
