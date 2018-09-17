@@ -22,42 +22,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos tabulares estáticos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="106" y="97" width="164" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5W-E1-MPQ">
-                                <rect key="frame" x="337" y="588" width="22" height="22"/>
+                                <rect key="frame" x="27" y="581" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.4695411115" green="0.82750774689999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="06r-em-eTN" kind="presentation" id="0v1-6Z-RmR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Bienvenida" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="98" y="47" width="179" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Hola..." textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="134.5" y="-126" width="105" height="387"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="387" id="k3B-Q1-uCe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB7-kC-pF7">
+                                <rect key="frame" x="27" y="168" width="321" height="287"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Fue diseñado para que un proyecto pudiera tomar vida y llevarse a cabo sin necesidad de salir del edificio. Desde la concepción de la idea, hasta la realización del prototipo y su presentación a posibles compradores e inversionistas, este edificio cuenta con todos los salones y equipo necesario para poder hacer realidad casi cualquier proyecto. 
+
+Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo ese proyecto que siempre has soñado, ¡simplemente tienes que seleccionar aquí!
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡CEDETEC es un edificio fascinante!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeK-eL-nAR">
+                                <rect key="frame" x="50" y="132" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curvy-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="P5F-PE-nec">
+                                <rect key="frame" x="159" y="463" width="165" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="WT8-Ta-m8X"/>
+                                    <constraint firstAttribute="height" constant="155" id="dn0-Pj-auD"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="R5W-E1-MPQ" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="474" id="3ig-Xd-OZh"/>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="R5W-E1-MPQ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="160.5" id="J4q-y1-4y5"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" constant="265.75" id="exm-UA-ej4"/>
-                            <constraint firstItem="R5W-E1-MPQ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="160.5" id="ssh-Y5-JFB"/>
+                            <constraint firstItem="gB7-kC-pF7" firstAttribute="top" secondItem="MeK-eL-nAR" secondAttribute="bottom" constant="15" id="ASA-v2-kSb"/>
+                            <constraint firstItem="MeK-eL-nAR" firstAttribute="centerX" secondItem="gB7-kC-pF7" secondAttribute="centerX" id="BLs-PM-Txz"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="R5W-E1-MPQ" secondAttribute="bottom" constant="15" id="BVj-cg-d3p"/>
+                            <constraint firstItem="gB7-kC-pF7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="11" id="D7i-ic-yWR"/>
+                            <constraint firstItem="gB7-kC-pF7" firstAttribute="leading" secondItem="R5W-E1-MPQ" secondAttribute="leading" id="DHb-PL-Sro"/>
+                            <constraint firstItem="P5F-PE-nec" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="-35" id="GqK-kf-NFx"/>
+                            <constraint firstItem="P5F-PE-nec" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="Igv-4P-tAp"/>
+                            <constraint firstItem="R5W-E1-MPQ" firstAttribute="top" secondItem="gB7-kC-pF7" secondAttribute="bottom" constant="126" id="Unq-6T-ycu"/>
+                            <constraint firstItem="MeK-eL-nAR" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="112" id="WXI-2C-919"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="MeK-eL-nAR" secondAttribute="centerX" id="i25-99-5yd"/>
+                            <constraint firstItem="MeK-eL-nAR" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="pHV-r0-ZgU"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="-126" id="qY2-Qf-k2U"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homeIcon" selectedImage="homeIcon" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="-322"/>
+            <point key="canvasLocation" x="557.60000000000002" y="-322.48875562218893"/>
         </scene>
         <!--Acerca De View Controller-->
         <scene sceneID="r8c-fW-q1C">
@@ -71,9 +100,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="App desarrollada por Martín Molina durante el semestre 201711 para la materia de Proyectos de Desarrollo Móvil" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BLf-EK-nEj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BLf-EK-nEj">
                                 <rect key="frame" x="67" y="147" width="240" height="178"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">App desarrollada por Diogo Burnay y Luis Villa durante el semestre 201811 para la materia de Proyectos de Desarrollo Móvil con eapoyo del profesor Martin Molina.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -98,46 +128,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAu-DN-DoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1380" y="-314"/>
-        </scene>
-        <!--Second-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="83" y="313" width="209.5" height="41.5"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="362.5" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1025" y="463"/>
         </scene>
         <!--Pisos-->
         <scene sceneID="STQ-qZ-UdQ">
@@ -301,7 +291,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="OHW-2k-eMC" kind="relationship" relationship="viewControllers" id="PPK-Ov-UO8"/>
                     </connections>
                 </tabBarController>
@@ -350,7 +339,7 @@
     </scenes>
     <resources>
         <image name="building" width="12" height="12"/>
+        <image name="curvy-arrow" width="896" height="606"/>
         <image name="homeIcon" width="12" height="12"/>
-        <image name="second" width="30" height="30"/>
     </resources>
 </document>
