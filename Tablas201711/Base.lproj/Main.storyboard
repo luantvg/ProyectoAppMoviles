@@ -32,8 +32,8 @@
                                     <segue destination="06r-em-eTN" kind="presentation" id="0v1-6Z-RmR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Hola..." textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="134.5" y="-126" width="105" height="387"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="ICEDETEC" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="96" y="-126" width="183" height="387"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="387" id="k3B-Q1-uCe"/>
@@ -42,43 +42,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB7-kC-pF7">
-                                <rect key="frame" x="27" y="168" width="321" height="287"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Fue diseñado para que un proyecto pudiera tomar vida y llevarse a cabo sin necesidad de salir del edificio. Desde la concepción de la idea, hasta la realización del prototipo y su presentación a posibles compradores e inversionistas, este edificio cuenta con todos los salones y equipo necesario para poder hacer realidad casi cualquier proyecto. 
-
-Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo ese proyecto que siempre has soñado, ¡simplemente tienes que seleccionar aquí!
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡CEDETEC es un edificio fascinante!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeK-eL-nAR">
-                                <rect key="frame" x="50" y="132" width="274" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curvy-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="P5F-PE-nec">
-                                <rect key="frame" x="159" y="463" width="165" height="155"/>
+                                <rect key="frame" x="153" y="463" width="165" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="WT8-Ta-m8X"/>
                                     <constraint firstAttribute="height" constant="155" id="dn0-Pj-auD"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB7-kC-pF7">
+                                <rect key="frame" x="27" y="122" width="321" height="161"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">¡CEDETEC es un edificio fascinante!
+
+Fue diseñado para que un proyecto pudiera tomar vida y llevarse a cabo sin necesidad de salir del edificio. Desde la concepción de la idea, hasta la realización del prototipo y su presentación a posibles compradores e inversionistas, este edificio cuenta con todos los salones y equipo necesario para poder hacer realidad casi cualquier proyecto. 
+
+Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo ese proyecto que siempre has soñado, ¡simplemente tienes que seleccionar aquí!
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gB7-kC-pF7" firstAttribute="top" secondItem="MeK-eL-nAR" secondAttribute="bottom" constant="15" id="ASA-v2-kSb"/>
-                            <constraint firstItem="MeK-eL-nAR" firstAttribute="centerX" secondItem="gB7-kC-pF7" secondAttribute="centerX" id="BLs-PM-Txz"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="R5W-E1-MPQ" secondAttribute="bottom" constant="15" id="BVj-cg-d3p"/>
                             <constraint firstItem="gB7-kC-pF7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="11" id="D7i-ic-yWR"/>
                             <constraint firstItem="gB7-kC-pF7" firstAttribute="leading" secondItem="R5W-E1-MPQ" secondAttribute="leading" id="DHb-PL-Sro"/>
-                            <constraint firstItem="P5F-PE-nec" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="-35" id="GqK-kf-NFx"/>
+                            <constraint firstItem="P5F-PE-nec" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="-41" id="GqK-kf-NFx"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="gB7-kC-pF7" secondAttribute="centerX" id="Hlb-sz-Myj"/>
                             <constraint firstItem="P5F-PE-nec" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="Igv-4P-tAp"/>
-                            <constraint firstItem="R5W-E1-MPQ" firstAttribute="top" secondItem="gB7-kC-pF7" secondAttribute="bottom" constant="126" id="Unq-6T-ycu"/>
-                            <constraint firstItem="MeK-eL-nAR" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="112" id="WXI-2C-919"/>
-                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="MeK-eL-nAR" secondAttribute="centerX" id="i25-99-5yd"/>
-                            <constraint firstItem="MeK-eL-nAR" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="pHV-r0-ZgU"/>
+                            <constraint firstItem="gB7-kC-pF7" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="102" id="NRS-Vd-CD3"/>
+                            <constraint firstItem="R5W-E1-MPQ" firstAttribute="top" secondItem="gB7-kC-pF7" secondAttribute="bottom" constant="298" id="Unq-6T-ycu"/>
+                            <constraint firstItem="gB7-kC-pF7" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="iIS-9s-f79"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="-126" id="qY2-Qf-k2U"/>
                         </constraints>
                     </view>
