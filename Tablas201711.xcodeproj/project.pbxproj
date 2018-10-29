@@ -22,6 +22,23 @@
 		FAC30FB6214EE8C0000BE765 /* SalonesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC30FB5214EE8C0000BE765 /* SalonesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7B69A76121877714008E3F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B69A75C21877714008E3F46 /* CTPanoramaView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF415AAB1E55C70F002A98ED;
+			remoteInfo = CTPanoramaView;
+		};
+		7B69A76321877714008E3F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B69A75C21877714008E3F46 /* CTPanoramaView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF415AB41E55C70F002A98ED;
+			remoteInfo = CTPanoramaViewTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
 		3546B96D1E5B96FD0035B84F /* ListaPisosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPisosTableViewController.swift; sourceTree = "<group>"; };
@@ -34,9 +51,12 @@
 		356B4D4A1E5B8F94002DD52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356B4D4C1E5B8F94002DD52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
+		7B385E022187799200901B55 /* CTPanoramaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTPanoramaView.swift; sourceTree = "<group>"; };
+		7B385E032187799600901B55 /* CTPieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTPieSliceView.swift; sourceTree = "<group>"; };
 		7B69A75421876A74008E3F46 /* PanoramicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramicViewController.swift; sourceTree = "<group>"; };
 		7B69A75621876B0C008E3F46 /* CTPieSliceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTPieSliceView.swift; path = "../../../Downloads/CTPanoramaView-master/Source/CTPieSliceView.swift"; sourceTree = "<group>"; };
 		7B69A75721876B0C008E3F46 /* CTPanoramaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTPanoramaView.swift; path = "../../../Downloads/CTPanoramaView-master/Source/CTPanoramaView.swift"; sourceTree = "<group>"; };
+		7B69A75C21877714008E3F46 /* CTPanoramaView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CTPanoramaView.xcodeproj; path = "../../Downloads/CTPanoramaView-master/CTPanoramaView.xcodeproj"; sourceTree = "<group>"; };
 		FAC30FB5214EE8C0000BE765 /* SalonesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +76,8 @@
 			children = (
 				356B4D3D1E5B8F94002DD52B /* Tablas201711 */,
 				356B4D3C1E5B8F94002DD52B /* Products */,
+				7B385E022187799200901B55 /* CTPanoramaView.swift */,
+				7B385E032187799600901B55 /* CTPieSliceView.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +110,15 @@
 			path = Tablas201711;
 			sourceTree = "<group>";
 		};
+		7B69A75D21877714008E3F46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B69A76221877714008E3F46 /* CTPanoramaView.framework */,
+				7B69A76421877714008E3F46 /* CTPanoramaViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,7 +146,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Tec de Monterrey";
 				TargetAttributes = {
 					356B4D3A1E5B8F94002DD52B = {
@@ -137,12 +168,35 @@
 			mainGroup = 356B4D321E5B8F94002DD52B;
 			productRefGroup = 356B4D3C1E5B8F94002DD52B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7B69A75D21877714008E3F46 /* Products */;
+					ProjectRef = 7B69A75C21877714008E3F46 /* CTPanoramaView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				356B4D3A1E5B8F94002DD52B /* Tablas201711 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7B69A76221877714008E3F46 /* CTPanoramaView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CTPanoramaView.framework;
+			remoteRef = 7B69A76121877714008E3F46 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B69A76421877714008E3F46 /* CTPanoramaViewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CTPanoramaViewTests.xctest;
+			remoteRef = 7B69A76321877714008E3F46 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		356B4D391E5B8F94002DD52B /* Resources */ = {
@@ -206,15 +260,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -256,15 +318,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

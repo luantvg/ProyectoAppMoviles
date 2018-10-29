@@ -277,6 +277,9 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="D8D-5h-PDG" kind="show" id="4HQ-5a-1jC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Salón:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONH-14-vg0">
                                 <rect key="frame" x="109" y="226" width="157" height="23"/>
@@ -363,7 +366,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgd-bh-ziC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3055" y="1904"/>
+            <point key="canvasLocation" x="3178" y="1904"/>
         </scene>
         <!--Salones-->
         <scene sceneID="jZM-DF-rXO">
