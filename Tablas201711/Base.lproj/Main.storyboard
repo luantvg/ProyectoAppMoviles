@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,14 +49,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-Ii-9k1">
-                                <rect key="frame" x="27" y="187" width="320" height="190"/>
+                                <rect key="frame" x="27" y="187" width="321" height="190"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">¡CEDETEC es un edificio fascinante!
+                                <string key="text">¡CEDETEC es un edificio fascinante!
 
 Fue diseñado para que un proyecto pudiera tomar vida y llevarse a cabo sin necesidad de salir del edificio. Desde la concepción de la idea, hasta la realización del prototipo y su presentación a posibles compradores e inversionistas, este edificio cuenta con todos los salones y equipo necesario para poder hacer realidad casi cualquier proyecto. 
 
 Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo ese proyecto que siempre has soñado, ¡simplemente tienes que seleccionar aquí!
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -154,7 +153,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matería :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6X-K2-kB9">
-                                <rect key="frame" x="154.5" y="333" width="67" height="21"/>
+                                <rect key="frame" x="154" y="333" width="67" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Gei-vy-uri"/>
                                 </constraints>
@@ -172,7 +171,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoTec" translatesAutoresizingMaskIntoConstraints="NO" id="NHD-Da-iPv">
-                                <rect key="frame" x="67" y="423" width="242" height="75"/>
+                                <rect key="frame" x="67" y="423" width="241" height="75"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkk-ot-OPT">
                                 <rect key="frame" x="128" y="558" width="122" height="41"/>
@@ -266,7 +265,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBB-F0-b9b">
-                                <rect key="frame" x="110" y="508" width="154" height="65"/>
+                                <rect key="frame" x="110" y="508" width="155" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="WKH-Vj-nV8"/>
                                 </constraints>
@@ -299,7 +298,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horario:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BND-Ms-jt3">
-                                <rect key="frame" x="153" y="361" width="68" height="23"/>
+                                <rect key="frame" x="153.5" y="361" width="68" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="vJ9-g3-imL"/>
                                 </constraints>
@@ -347,6 +346,24 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0I-uk-NcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2357.5999999999999" y="1903.8980509745129"/>
+        </scene>
+        <!--Panoramic View Controller-->
+        <scene sceneID="P3E-qX-myQ">
+            <objects>
+                <viewController id="D8D-5h-PDG" customClass="PanoramicViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wpj-iJ-ykL"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccm-ZE-dH5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5nW-Ar-5cO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sgd-bh-ziC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3055" y="1904"/>
         </scene>
         <!--Salones-->
         <scene sceneID="jZM-DF-rXO">
@@ -436,10 +453,10 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
         </scene>
     </scenes>
     <resources>
-        <image name="building" width="12" height="12"/>
-        <image name="cdtBck" width="512" height="316"/>
+        <image name="building" width="25" height="25"/>
+        <image name="cdtBck" width="1024" height="633"/>
         <image name="curvy-arrow" width="896" height="606"/>
-        <image name="homeIcon" width="12" height="12"/>
-        <image name="logoTec" width="2042" height="541"/>
+        <image name="homeIcon" width="40" height="40"/>
+        <image name="logoTec" width="3063" height="811.5"/>
     </resources>
 </document>
