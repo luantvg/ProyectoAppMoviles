@@ -361,12 +361,22 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                     <view key="view" contentMode="scaleToFill" id="5nW-Ar-5cO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9AK-By-FuL" customClass="CTPanoramaView" customModule="Tablas201711" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="panoramaView" destination="9AK-By-FuL" id="JXE-5z-spm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgd-bh-ziC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3178" y="1904"/>
+            <point key="canvasLocation" x="3176.8000000000002" y="1903.8980509745129"/>
         </scene>
         <!--Salones-->
         <scene sceneID="jZM-DF-rXO">
