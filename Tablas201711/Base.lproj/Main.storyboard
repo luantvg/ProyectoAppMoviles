@@ -278,7 +278,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="D8D-5h-PDG" kind="show" id="4HQ-5a-1jC"/>
+                                    <action selector="toPanoView:" destination="HHF-bc-zDl" eventType="touchUpInside" id="ZMx-3g-7vl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Salón:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONH-14-vg0">
@@ -353,7 +353,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
         <!--Panoramic View Controller-->
         <scene sceneID="P3E-qX-myQ">
             <objects>
-                <viewController id="D8D-5h-PDG" customClass="PanoramicViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="panoramicVisor" id="D8D-5h-PDG" customClass="PanoramicViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wpj-iJ-ykL"/>
                         <viewControllerLayoutGuide type="bottom" id="ccm-ZE-dH5"/>

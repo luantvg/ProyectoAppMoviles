@@ -12,6 +12,7 @@ class DetalleViewController: UIViewController {
 
     var nombre:String=""
     var horario:String=""
+    var url = [String]()
     
     @IBOutlet weak var laNombre: UILabel!
     @IBOutlet weak var laHorario: UILabel!
@@ -23,13 +24,26 @@ class DetalleViewController: UIViewController {
         laNombre.text = nombre
         laHorario.text = horario
     }
+    
+    @IBAction func toPanoView(_ sender: Any) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "panoramicVisor") as! PanoramicViewController
+        
+        siguienteVista.uurl = url
+        
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
 
+    
+    
     /*
     // MARK: - Navigation
 

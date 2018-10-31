@@ -12,20 +12,27 @@ class PanoramicViewController: UIViewController {
     
     @IBOutlet weak var panoramaView: CTPanoramaView!
     let panoramicView = CTPanoramaView()
+    var uurl = [String]()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let url = URL(string: "http://martinmolina.com.mx/201813/images/CEDETEC/101Panono%20-%20Cabina%20de%20control.jpg")
+        print(uurl)
+        
+        /*
+        let url = URL(string: uurl)
         let data = try? Data(contentsOf: url!)
         let image = UIImage(data: data!)
+ 
         panoramaView.image = image
-       
+        panoramaView.controlMethod = .motion
+ 
+        */
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
