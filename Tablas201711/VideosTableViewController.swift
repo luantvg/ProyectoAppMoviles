@@ -134,7 +134,7 @@ class VideosTableViewController: UITableViewController, UISearchResultsUpdating 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var indice = 0
         var objetoPiso = [String:Any]()
-        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "panoramicVisor") as! PanoramicViewController
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "ARVideo") as! ARVideoViewController
         if (self.searchController.isActive)
         {
             indice = indexPath.row
@@ -149,7 +149,7 @@ class VideosTableViewController: UITableViewController, UISearchResultsUpdating 
         
         let url = objetoPiso["url"] as! String
         
-        siguienteVista.uurl = url
+        siguienteVista.uurl = "http://ebookfrenzy.com/ios_book/movie/movie.mov"
         
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         

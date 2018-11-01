@@ -153,6 +153,8 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
 
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
+        
+        
     }
     
 }

@@ -14,6 +14,7 @@ import AVFoundation
 class ARVideoViewController: UIViewController, ARSCNViewDelegate{
 
     @IBOutlet var sceneView: ARSCNView!
+    var uurl:String=""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +46,7 @@ class ARVideoViewController: UIViewController, ARSCNViewDelegate{
         //let path = Bundle.main.path(forResource: "CheeziPuffs", ofType: "mov")
         //let url = URL(fileURLWithPath: path!)
         
-        let moviePath = "http://ebookfrenzy.com/ios_book/movie/movie.mov"
+        let moviePath = uurl
         let url = URL(string: moviePath)
         let player = AVPlayer(url: url!)
         player.volume = 0.5
