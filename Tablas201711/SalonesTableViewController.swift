@@ -57,7 +57,7 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
         var direccion = ""
         
         if(piso == "Primer piso") {
-            direccion="http://martinmolina.com.mx/201813/data/SalonesPorPiso/piso1prueba.json"
+            direccion="http://martinmolina.com.mx/201813/data/SalonesPorPiso/piso1panopics.json"
         }
         if(piso == "Segundo piso") {
             direccion="http://martinmolina.com.mx/201813/data/SalonesPorPiso/piso2.json"
@@ -150,7 +150,7 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
         
         let nombre:String = objetoPiso["nombre"] as! String
         let horario:String = objetoPiso["horario"] as! String
-        let url:[String] = objetoPiso["imgURL"] as! Array
+        let url:String = objetoPiso["imgURL"] as! String
         siguienteVista.nombre = nombre
         siguienteVista.horario = horario
         siguienteVista.url = url

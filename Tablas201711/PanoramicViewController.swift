@@ -12,7 +12,7 @@ class PanoramicViewController: UIViewController {
     
     @IBOutlet weak var panoramaView: CTPanoramaView!
     let panoramicView = CTPanoramaView()
-    var uurl = [String]()
+    var uurl:String=""
 
 
     override func viewDidLoad() {

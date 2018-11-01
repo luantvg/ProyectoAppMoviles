@@ -12,7 +12,7 @@ class DetalleViewController: UIViewController {
 
     var nombre:String=""
     var horario:String=""
-    var url = [String]()
+    var url:String=""
     
     @IBOutlet weak var laNombre: UILabel!
     @IBOutlet weak var laHorario: UILabel!
