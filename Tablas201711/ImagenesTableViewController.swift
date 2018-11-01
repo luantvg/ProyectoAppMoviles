@@ -124,8 +124,17 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
         let objetoPiso = datosFiltrados[indexPath.row] as! [String: Any]
         let s:String = objetoPiso["name"] as! String
         
+        let ul = objetoPiso["url"] as! String
+        
+        let urlAux = URL(string: ul)
+        
+        let data = NSData(contentsOf: urlAux! )
+        var image:UIImage?
+        image = UIImage(data: data! as Data)
+        
+        
         cell.textLabel?.text=s
-        //Agregar preview de la imagen
+        cell.imageView?.image = image
         
         
         return cell
