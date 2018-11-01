@@ -416,7 +416,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgd-bh-ziC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586" y="3820"/>
+            <point key="canvasLocation" x="1214" y="3090"/>
         </scene>
         <!--Salones-->
         <scene sceneID="jZM-DF-rXO">
@@ -601,6 +601,53 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="-586" y="3090"/>
+        </scene>
+        <!--Imagenes del Salón-->
+        <scene sceneID="eTj-fO-aMW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOa-Wo-xrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="Videos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pq0-N8-sgA" customClass="VideosTableViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uaq-UP-KEf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntradaSalon" id="vhj-LI-gCY" userLabel="EntradaSalon">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vhj-LI-gCY" id="SVo-fo-V0H">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Pq0-N8-sgA" id="lgM-bt-Bnr"/>
+                            <outlet property="delegate" destination="Pq0-N8-sgA" id="Ztg-UZ-FSH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Imagenes del Salón" id="rdD-Yt-7jZ"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="353" y="3842"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SaB-CT-OxJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VkY-6M-6IP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6nT-yx-13Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wCw-zW-cRb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pq0-N8-sgA" kind="relationship" relationship="rootViewController" id="iS0-s8-HYm"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-586" y="3842"/>
         </scene>
     </scenes>
     <resources>

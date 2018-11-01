@@ -19,7 +19,7 @@ class PanoramicViewController: UIViewController {
         super.viewDidLoad()
         print(uurl)
         
-        /*
+        
         let url = URL(string: uurl)
         let data = try? Data(contentsOf: url!)
         let image = UIImage(data: data!)
@@ -27,7 +27,6 @@ class PanoramicViewController: UIViewController {
         panoramaView.image = image
         panoramaView.controlMethod = .motion
  
-        */
         
         // Do any additional setup after loading the view.
     }

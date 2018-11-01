@@ -1,5 +1,5 @@
 //
-//  ImagenesTableViewController.swift
+//  VideosTableViewController.swift
 //  Tablas201711
 //
 //  Created by Diogo Burnay on 01/11/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImagenesTableViewController: UITableViewController, UISearchResultsUpdating {
+class VideosTableViewController: UITableViewController, UISearchResultsUpdating {
 
     var idsalon:String=""
     
@@ -56,7 +56,7 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let direccion = "http://martinmolina.com.mx/201813/data/SalonesPorPiso/FotosSalones.json"
+        let direccion = "http://martinmolina.com.mx/201813/data/SalonesPorPiso/VideosSalones.json"
         
         
         
@@ -73,7 +73,7 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
         
         nuevoArray = try! JSONSerialization.jsonObject(with: datos! ) as? [Any]
         
- 
+        
         
         nuevoArray = nuevoArray!.filter{
             let objetoPiso = $0 as![String:Any]
@@ -125,11 +125,11 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
         let s:String = objetoPiso["name"] as! String
         
         cell.textLabel?.text=s
-        cell.
-        
         
         return cell
     }
+    
+    //Falta cambiar la ventana a la cuàl te envia
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var indice = 0
@@ -150,9 +150,11 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
         let url = objetoPiso["url"] as! String
         
         siguienteVista.uurl = url
-
+        
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }
     
+
+
 }

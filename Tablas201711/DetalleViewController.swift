@@ -25,22 +25,7 @@ class DetalleViewController: UIViewController {
         laNombre.text = nombre
         laHorario.text = horario
     }
-    
-
-    /*
-    @IBAction func toPanoView(_ sender: Any) {
-        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "panoramicVisor") as! PanoramicViewController
-        
-        siguienteVista.uurl = url
-        
-        self.navigationController?.pushViewController(siguienteVista, animated: true)
-        
-    }
- */
  
- 
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -58,6 +43,12 @@ class DetalleViewController: UIViewController {
  
 
     @IBAction func Videos(_ sender: Any) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Videos") as! VideosTableViewController
+        
+        
+        siguienteVista.idsalon = idsalon
+        
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
     }
     
     @IBAction func AR(_ sender: Any) {

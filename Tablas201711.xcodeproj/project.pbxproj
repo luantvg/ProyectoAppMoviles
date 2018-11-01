@@ -18,6 +18,7 @@
 		3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */; };
 		3B6EF1D9218AB24400D1DB9D /* GeneralTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1D8218AB24400D1DB9D /* GeneralTableViewController.swift */; };
 		3B6EF1DD218AE1E500D1DB9D /* ImagenesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1DC218AE1E500D1DB9D /* ImagenesTableViewController.swift */; };
+		3B6EF1DF218AFEEA00D1DB9D /* VideosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1DE218AFEEA00D1DB9D /* VideosTableViewController.swift */; };
 		7B385E0621877AA000901B55 /* CTPieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B385E0421877AA000901B55 /* CTPieSliceView.swift */; };
 		7B385E0721877AA000901B55 /* CTPanoramaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B385E0521877AA000901B55 /* CTPanoramaView.swift */; };
 		7B69A75521876A74008E3F46 /* PanoramicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69A75421876A74008E3F46 /* PanoramicViewController.swift */; };
@@ -55,6 +56,7 @@
 		3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
 		3B6EF1D8218AB24400D1DB9D /* GeneralTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTableViewController.swift; sourceTree = "<group>"; };
 		3B6EF1DC218AE1E500D1DB9D /* ImagenesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenesTableViewController.swift; sourceTree = "<group>"; };
+		3B6EF1DE218AFEEA00D1DB9D /* VideosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableViewController.swift; sourceTree = "<group>"; };
 		7B385E0421877AA000901B55 /* CTPieSliceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPieSliceView.swift; sourceTree = "<group>"; };
 		7B385E0521877AA000901B55 /* CTPanoramaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPanoramaView.swift; sourceTree = "<group>"; };
 		7B69A75421876A74008E3F46 /* PanoramicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramicViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				3B6EF1D8218AB24400D1DB9D /* GeneralTableViewController.swift */,
 				3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */,
 				3B6EF1DC218AE1E500D1DB9D /* ImagenesTableViewController.swift */,
+				3B6EF1DE218AFEEA00D1DB9D /* VideosTableViewController.swift */,
 				7B69A75421876A74008E3F46 /* PanoramicViewController.swift */,
 			);
 			path = Tablas201711;
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6EF1DF218AFEEA00D1DB9D /* VideosTableViewController.swift in Sources */,
 				3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */,
 				7B69A75521876A74008E3F46 /* PanoramicViewController.swift in Sources */,
 				7B385E0721877AA000901B55 /* CTPanoramaView.swift in Sources */,
