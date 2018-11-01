@@ -134,7 +134,7 @@ class ModelosTableViewController: UITableViewController, UISearchResultsUpdating
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var indice = 0
         var objetoPiso = [String:Any]()
-        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "panoramicVisor") as! PanoramicViewController
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "ARAsset") as! ARAssetsViewController
         if (self.searchController.isActive)
         {
             indice = indexPath.row
