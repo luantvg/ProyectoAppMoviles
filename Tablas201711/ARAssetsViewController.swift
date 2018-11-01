@@ -76,6 +76,11 @@ class ARAssetsViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         
+        let rotateGestureRecognizer = UIRotationGestureRecognizer (target: self, action: #selector(rotate))
+        
+        sceneView.addGestureRecognizer(rotateGestureRecognizer)
+        
+        
     }
     func downloadpic() {
         let catPictureURL = URL(string: "https://images.all-free-download.com/images/graphiclarge/metal_texture_set_04_hd_picture_170836.jpg")!
