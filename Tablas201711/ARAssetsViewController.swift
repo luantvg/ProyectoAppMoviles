@@ -10,10 +10,13 @@ import UIKit
 import SceneKit
 import ARKit
 
+
+
 class ARAssetsViewController: UIViewController, ARSCNViewDelegate {
     
     var nodoRaiz = SCNNode()
     var currentAngleY: Float = 0.0
+    var uurl:String=""
 
     @IBAction func escalar(_ sender: UIPinchGestureRecognizer) {
          nodoRaiz.scale = SCNVector3(sender.scale, sender.scale, sender.scale)
@@ -36,7 +39,7 @@ class ARAssetsViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         sceneView.showsStatistics = true
         
-        let urlAsset = URL(string: "http://martinmolina.com.mx/201813/scenes/pug.scn")
+        let urlAsset = URL(string: uurl)
         let data = try? Data(contentsOf: urlAsset!)
        
         
