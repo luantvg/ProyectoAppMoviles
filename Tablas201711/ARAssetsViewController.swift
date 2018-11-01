@@ -17,13 +17,15 @@ class ARAssetsViewController: UIViewController, ARSCNViewDelegate {
     var nodoRaiz = SCNNode()
     var currentAngleY: Float = 0.0
     var uurl:String=""
+    let mygroup = DispatchGroup()
+    var activityIndicator = UIActivityIndicatorView()
 
     @IBAction func escalar(_ sender: UIPinchGestureRecognizer) {
          nodoRaiz.scale = SCNVector3(sender.scale, sender.scale, sender.scale)
     }
     
     @IBAction func rotate(_ sender: UIRotationGestureRecognizer) {
-          nodoRaiz.eulerAngles = SCNVector3(0,sender.rotation,0)
+          nodoRaiz.eulerAngles = SCNVector3(sender.rotation,sender.rotation,0)
     }
     @IBAction func rotar(_ sender: UIPanGestureRecognizer) {
         
@@ -38,10 +40,17 @@ class ARAssetsViewController: UIViewController, ARSCNViewDelegate {
         // Do any additional setup after loading the view.
         sceneView.delegate = self
         sceneView.showsStatistics = true
+        self.activityIndicator = UIActivityIndicatorView(style: .gray)
+        activityIndicator.frame = view.bounds
+        self.activityIndicator.hidesWhenStopped = true
+        
+        view.addSubview(self.activityIndicator)
         
         let urlAsset = URL(string: uurl)
         let data = try? Data(contentsOf: urlAsset!)
-       
+        //let urlMaterial = URL(string: "https://images.all-free-download.com/images/graphiclarge/metal_texture_set_04_hd_picture_170836.jpg")
+        //let dataMaterial = try? Data(contentsOf: urlMaterial!)
+       downloadpic()
         
         let scene = SCNScene()
         if let filePath = data {
@@ -53,12 +62,11 @@ class ARAssetsViewController: UIViewController, ARSCNViewDelegate {
             nodoRaiz = referenceNode!
         }
         
-        let urlMaterial = URL(string: "http://martinmolina.com.mx/201813/scenes/pug-texture.jpg")
-        let dataMaterial = try? Data(contentsOf: urlMaterial!)
+       
         //nodoRaiz  "art.scnassets/pug.dae")!
         let materialAsset = SCNMaterial()
         
-        materialAsset.diffuse.contents =  UIImage(data: dataMaterial!)
+        materialAsset.diffuse.contents = UIImage(named:"metalrexture.jpg")
         
         nodoRaiz.geometry?.materials = [materialAsset]
         
@@ -68,6 +76,54 @@ class ARAssetsViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         
+    }
+    func downloadpic() {
+        let catPictureURL = URL(string: "https://images.all-free-download.com/images/graphiclarge/metal_texture_set_04_hd_picture_170836.jpg")!
+        
+        // Creating a session object with the default configuration.
+        // You can read more about it here https://developer.apple.com/reference/foundation/urlsessionconfiguration
+        let session = URLSession(configuration: .default)
+        
+        // Define a download task. The download task will download the contents of the URL as a Data object and then you can do what you wish with that data.
+        
+        self.activityIndicator.startAnimating()
+        print("animacion")
+        
+        let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
+            // The download has finished.
+            if let e = error {
+                print("Error downloading cat picture: \(e)")
+            } else {
+                // No errors found.
+                // It would be weird if we didn't have a response, so check for that too.
+                if let res = response as? HTTPURLResponse {
+                    // put loading screen here
+                    
+                    self.mygroup.enter()
+                    print("downloading image")
+                    print("Downloaded cat picture with response code \(res.statusCode)")
+                    if let data = data {
+                        DispatchQueue.main.async {
+                            // Finally convert that Data into an image and do what you wish with it.
+                            let dataIMG = try? Data(contentsOf: catPictureURL)
+                            let image = UIImage(data: dataIMG!)
+                            self.mygroup.leave()
+                            print("image already downloaded")
+                            self.activityIndicator.stopAnimating()
+                            
+                            // Do something with your image.
+                        }
+                        
+                    } else {
+                        print("Couldn't get image: Image is nil")
+                    }
+                } else {
+                    print("Couldn't get response code for some reason")
+                }
+            }
+        }
+        
+        downloadPicTask.resume()
     }
     
 
