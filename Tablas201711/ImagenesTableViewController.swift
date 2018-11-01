@@ -125,7 +125,7 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
         let s:String = objetoPiso["name"] as! String
         
         cell.textLabel?.text=s
-        cell.
+        //Agregar preview de la imagen
         
         
         return cell
