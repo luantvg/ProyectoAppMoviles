@@ -10,6 +10,8 @@ import UIKit
 
 class DetalleViewController: UIViewController {
 
+    var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
+    
     var nombre:String=""
     var horario:String=""
     var idsalon:String=""
@@ -20,7 +22,13 @@ class DetalleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        
+        view.addSubview(activityIndicator)
+        
         // Do any additional setup after loading the view.
         laNombre.text = nombre
         laHorario.text = horario
@@ -33,31 +41,51 @@ class DetalleViewController: UIViewController {
 
     
     @IBAction func Imagenes(_ sender: Any) {
-        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Imagenes") as! ImagenesTableViewController
+        activityIndicator.startAnimating()
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            
+            let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Imagenes") as! ImagenesTableViewController
+            
+            siguienteVista.idsalon = self.idsalon
+            
+            self.navigationController?.pushViewController(siguienteVista, animated: true)
+            
+            self.activityIndicator.stopAnimating()
+        }
         
-        siguienteVista.idsalon = idsalon
-        
-        self.navigationController?.pushViewController(siguienteVista, animated: true)
     }
  
 
     @IBAction func Videos(_ sender: Any) {
-        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Videos") as! VideosTableViewController
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
         
-        siguienteVista.idsalon = idsalon
+            let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Videos") as! VideosTableViewController
+            
+            
+            siguienteVista.idsalon = self.idsalon
+            
+            self.navigationController?.pushViewController(siguienteVista, animated: true)
+            
+            self.activityIndicator.stopAnimating()
+        }
         
-        self.navigationController?.pushViewController(siguienteVista, animated: true)
     }
     
     @IBAction func AR(_ sender: Any) {
-        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Modelos") as! ModelosTableViewController
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
         
-        siguienteVista.idsalon = idsalon
-        
-        self.navigationController?.pushViewController(siguienteVista, animated: true)
+            let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Modelos") as! ModelosTableViewController
+            
+            
+            siguienteVista.idsalon = self.idsalon
+            
+            self.navigationController?.pushViewController(siguienteVista, animated: true)
+            
+            self.activityIndicator.stopAnimating()
+        }
     }
     
     /*

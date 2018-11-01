@@ -19,11 +19,7 @@ class PanoramicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(uurl)
-        
-        
-        //let url = URL(string: uurl)
-        
+        //print(uurl)
         
         self.activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.frame = view.bounds

@@ -83,7 +83,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="557.60000000000002" y="-322.48875562218893"/>
+            <point key="canvasLocation" x="-586" y="681"/>
         </scene>
         <!--Acerca De View Controller-->
         <scene sceneID="r8c-fW-q1C">
@@ -212,7 +212,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAu-DN-DoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1380" y="-314.39280359820094"/>
+            <point key="canvasLocation" x="234" y="690"/>
         </scene>
         <!--Pisos-->
         <scene sceneID="STQ-qZ-UdQ">
@@ -256,13 +256,6 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKf-ZF-gmd">
-                                <rect key="frame" x="0.0" y="69" width="375" height="69"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWs-8b-wPt">
                                 <rect key="frame" x="204" y="491" width="155" height="65"/>
                                 <constraints>
@@ -336,7 +329,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-D3-76M">
-                                <rect key="frame" x="110" y="564" width="155" height="65"/>
+                                <rect key="frame" x="110" y="582" width="155" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="YrT-r7-oV8"/>
                                 </constraints>
@@ -352,6 +345,13 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                     <action selector="AR:" destination="HHF-bc-zDl" eventType="touchUpInside" id="qzF-wp-uFb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detalles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKf-ZF-gmd">
+                                <rect key="frame" x="0.0" y="56" width="375" height="69"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -360,17 +360,17 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                             <constraint firstAttribute="trailing" secondItem="HKf-ZF-gmd" secondAttribute="trailing" id="Fns-I0-4B5"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="trailing" secondItem="gRW-JN-wyI" secondAttribute="trailing" id="Gz1-Nv-xRo"/>
                             <constraint firstItem="iBB-F0-b9b" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leadingMargin" id="S2C-cw-YaL"/>
-                            <constraint firstItem="HKf-ZF-gmd" firstAttribute="top" secondItem="Nud-UE-Pxg" secondAttribute="bottom" constant="49" id="Sa4-ot-UfQ"/>
+                            <constraint firstItem="HKf-ZF-gmd" firstAttribute="top" secondItem="Nud-UE-Pxg" secondAttribute="bottom" constant="36" id="Sa4-ot-UfQ"/>
                             <constraint firstItem="dhd-D3-76M" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leadingMargin" constant="94" id="Tdx-Ti-gtC"/>
                             <constraint firstItem="mWs-8b-wPt" firstAttribute="trailing" secondItem="9sQ-sG-7K8" secondAttribute="trailingMargin" id="UYJ-5t-0I9"/>
                             <constraint firstItem="vAF-1i-mIa" firstAttribute="top" secondItem="iBB-F0-b9b" secondAttribute="bottom" constant="111" id="UfD-8V-hAa"/>
-                            <constraint firstItem="dhd-D3-76M" firstAttribute="top" secondItem="mWs-8b-wPt" secondAttribute="bottom" constant="8" symbolic="YES" id="W1P-E7-fcl"/>
+                            <constraint firstItem="dhd-D3-76M" firstAttribute="top" secondItem="mWs-8b-wPt" secondAttribute="bottom" constant="26" id="W1P-E7-fcl"/>
                             <constraint firstItem="gRW-JN-wyI" firstAttribute="trailing" secondItem="5NY-VK-t2S" secondAttribute="trailing" id="WbS-nn-LoT"/>
                             <constraint firstItem="5NY-VK-t2S" firstAttribute="centerX" secondItem="iBB-F0-b9b" secondAttribute="centerX" constant="94" id="Wc4-70-wHV"/>
                             <constraint firstItem="gRW-JN-wyI" firstAttribute="leading" secondItem="5NY-VK-t2S" secondAttribute="leading" id="XK7-X0-1XP"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="leading" secondItem="gRW-JN-wyI" secondAttribute="leading" id="cXz-CV-UOr"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leading" id="eiT-kf-Brq"/>
-                            <constraint firstItem="ONH-14-vg0" firstAttribute="top" secondItem="HKf-ZF-gmd" secondAttribute="bottom" constant="88" id="ijP-dZ-Fko"/>
+                            <constraint firstItem="ONH-14-vg0" firstAttribute="top" secondItem="HKf-ZF-gmd" secondAttribute="bottom" constant="101" id="ijP-dZ-Fko"/>
                             <constraint firstItem="BND-Ms-jt3" firstAttribute="top" secondItem="gRW-JN-wyI" secondAttribute="bottom" constant="28" id="kNQ-Ft-LaX"/>
                             <constraint firstItem="gRW-JN-wyI" firstAttribute="top" secondItem="ONH-14-vg0" secondAttribute="bottom" constant="21" id="kS6-Cs-2ef"/>
                             <constraint firstItem="iBB-F0-b9b" firstAttribute="top" secondItem="5NY-VK-t2S" secondAttribute="bottom" constant="21" id="lQj-ca-dUc"/>
@@ -461,7 +461,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3997.5999999999999" y="1332.6836581709147"/>
+            <point key="canvasLocation" x="1214" y="4583"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="Gjs-Bb-ibm">
@@ -488,7 +488,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCg-yY-3pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4672.8000000000002" y="1330.8845577211396"/>
+            <point key="canvasLocation" x="1214" y="3842"/>
         </scene>
         <!--Salones-->
         <scene sceneID="jZM-DF-rXO">
@@ -537,7 +537,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-585" y="-322"/>
+            <point key="canvasLocation" x="-586" y="-88"/>
         </scene>
         <!--Salones-->
         <scene sceneID="X6H-5M-f5s">
@@ -605,7 +605,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3e-yS-zqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="690"/>
+            <point key="canvasLocation" x="2150" y="690"/>
         </scene>
         <!--General-->
         <scene sceneID="Rdp-Rb-Hnf">
@@ -627,7 +627,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFX-SB-LNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="690"/>
+            <point key="canvasLocation" x="1214" y="690"/>
         </scene>
         <!--Imagenes del Salón-->
         <scene sceneID="mgu-S5-0kz">
@@ -676,7 +676,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
             </objects>
             <point key="canvasLocation" x="-586" y="3090"/>
         </scene>
-        <!--Imagenes del Salón-->
+        <!--Videos del Salón-->
         <scene sceneID="eTj-fO-aMW">
             <objects>
                 <tableViewController storyboardIdentifier="Videos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pq0-N8-sgA" customClass="VideosTableViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
@@ -699,7 +699,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                             <outlet property="delegate" destination="Pq0-N8-sgA" id="Ztg-UZ-FSH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Imagenes del Salón" id="rdD-Yt-7jZ"/>
+                    <navigationItem key="navigationItem" title="Videos del Salón" id="rdD-Yt-7jZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOa-Wo-xrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -723,7 +723,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
             </objects>
             <point key="canvasLocation" x="-586" y="3842"/>
         </scene>
-        <!--Imagenes del Salón-->
+        <!--Modelos del Salón-->
         <scene sceneID="2BZ-I4-U5d">
             <objects>
                 <tableViewController storyboardIdentifier="Modelos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fUc-yU-z58" customClass="ModelosTableViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
@@ -746,7 +746,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                             <outlet property="delegate" destination="fUc-yU-z58" id="uE2-PB-lLT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Imagenes del Salón" id="4ox-AB-Vkw"/>
+                    <navigationItem key="navigationItem" title="Modelos del Salón" id="4ox-AB-Vkw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTZ-b3-Cb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
