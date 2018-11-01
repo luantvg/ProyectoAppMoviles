@@ -1,17 +1,15 @@
 //
-//  SalonesTableViewController.swift
+//  GeneralTableViewController.swift
 //  Tablas201711
 //
-//  Created by macbook on 16/09/18.
+//  Created by Diogo Burnay on 31/10/18.
 //  Copyright © 2018 Tec de Monterrey. All rights reserved.
 //
 
 import UIKit
 
-class SalonesTableViewController: UITableViewController, UISearchResultsUpdating {
+class GeneralTableViewController: UITableViewController , UISearchResultsUpdating {
 
-    var piso:String=""
-    
     var datosFiltrados = [Any]()
     
     let searchController = UISearchController(searchResultsController: nil)
@@ -23,17 +21,17 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
         } else {
             
             datosFiltrados = nuevoArray!.filter {
-                let objetoPiso=$0 as! [String:Any];
-                let s:String = objetoPiso["nombre"] as! String;
+                let objetoSalon=$0 as! [String:Any];
+                let s:String = objetoSalon["nombre"] as! String;
                 return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
         }
         
         self.tableView.reloadData()
     }
     
+    let direccion="http://martinmolina.com.mx/201813/data/salonesV1.json"
+    
     var nuevoArray:[Any]?
-
-    var arrayAux:[Any]?
     
     func JSONParseArray(_ string: String) -> [AnyObject]{
         if let data = string.data(using: String.Encoding.utf8){
@@ -56,12 +54,6 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let direccion = "http://martinmolina.com.mx/201813/data/SalonesPorPiso/TodosLosPisosJSON.json"
-        
-        var indexPiso = ""
-        
-        print(piso)
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -70,29 +62,9 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
         
         //nuevoArray=(JSONParseArray(datosJSON) as NSArray) as! [Any]
         
-        if(piso == "Primer piso") {
-            indexPiso="1"
-        }
-        if(piso == "Segundo piso") {
-            indexPiso="2"
-        }
-        if(piso == "Tercer piso") {
-            indexPiso="3"
-        }
-        if(piso == "Cuarto piso") {
-            indexPiso="4"
-        }
-        
         let url = URL(string: direccion)
         let datos = try? Data(contentsOf: url!)
-        
-        nuevoArray = try! JSONSerialization.jsonObject(with: datos! ) as? [Any]
-        
-        nuevoArray = nuevoArray!.filter{
-            let objetoPiso = $0 as![String:Any]
-            let s:String = objetoPiso["piso"] as! String;
-            return(s == indexPiso)
-        }
+        nuevoArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
         
         //paso 5: copiar el contenido del arreglo en el arreglo filtrado
         datosFiltrados = nuevoArray!
@@ -131,10 +103,10 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EntradaSalon", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EntradaPiso", for: indexPath)
         
-        let objetoPiso = datosFiltrados[indexPath.row] as! [String: Any]
-        let s:String = objetoPiso["nombre"] as! String
+        let objetoSalon = datosFiltrados[indexPath.row] as! [String: Any]
+        let s:String = objetoSalon["nombre"] as! String
         
         cell.textLabel?.text=s
         
@@ -143,27 +115,31 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var indice = 0
-        var objetoPiso = [String:Any]()
+        var objetoSalon = [String:Any]()
         let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Detalle") as! DetalleViewController
         if (self.searchController.isActive)
         {
             indice = indexPath.row
-            objetoPiso = datosFiltrados[indice] as! [String: Any]
+            objetoSalon = datosFiltrados[indice] as! [String: Any]
             
         }
         else
         {
             indice = indexPath.row
-            objetoPiso = nuevoArray![indice] as! [String: Any]
+            objetoSalon = nuevoArray![indice] as! [String: Any]
         }
         
-        let nombre:String = objetoPiso["nombre"] as! String
-        let horario:String = objetoPiso["horario"] as! String
-        let id:String = objetoPiso["id"] as! String
+        //print(objetoPiso["imgURL"] as! String)
+        
+        let nombre:String = objetoSalon["nombre"] as! String
+        let horario:String = objetoSalon["horario"] as! String
+        let id:String = objetoSalon["id"] as! String
+        //let url:String = objetoPiso["imgURL"] as! String
         siguienteVista.nombre = nombre
         siguienteVista.horario = horario
         siguienteVista.idsalon = id
-    
+        //siguienteVista.url = url
+        
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }

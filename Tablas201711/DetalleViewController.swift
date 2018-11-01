@@ -12,7 +12,8 @@ class DetalleViewController: UIViewController {
 
     var nombre:String=""
     var horario:String=""
-    var url:String=""
+    var idsalon:String=""
+    //var url:String=""
     
     @IBOutlet weak var laNombre: UILabel!
     @IBOutlet weak var laHorario: UILabel!
@@ -25,6 +26,8 @@ class DetalleViewController: UIViewController {
         laHorario.text = horario
     }
     
+
+    /*
     @IBAction func toPanoView(_ sender: Any) {
         let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "panoramicVisor") as! PanoramicViewController
         
@@ -33,16 +36,32 @@ class DetalleViewController: UIViewController {
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }
+ */
+ 
+ 
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 
     
+    @IBAction func Imagenes(_ sender: Any) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Imagenes") as! ImagenesTableViewController
+        
+        
+        siguienteVista.idsalon = idsalon
+        
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
+    }
+ 
+
+    @IBAction func Videos(_ sender: Any) {
+    }
+    
+    @IBAction func AR(_ sender: Any) {
+    }
     
     /*
     // MARK: - Navigation
