@@ -611,7 +611,9 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
         <scene sceneID="Rdp-Rb-Hnf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tQw-mQ-udq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="General" image="Glasses" selectedImage="Glasses" id="jBg-Xn-ibg"/>
+                    <tabBarItem key="tabBarItem" title="General" image="Glasses" selectedImage="Glasses" id="jBg-Xn-ibg">
+                        <inset key="largeContentSizeImageInsets" minX="1" minY="1" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xsc-XK-U9M">

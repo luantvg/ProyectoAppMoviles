@@ -149,7 +149,8 @@ class VideosTableViewController: UITableViewController, UISearchResultsUpdating 
         
         let url = objetoPiso["url"] as! String
         
-        siguienteVista.uurl = "http://ebookfrenzy.com/ios_book/movie/movie.mov"
+        siguienteVista.uurl = url
+        //"http://ebookfrenzy.com/ios_book/movie/movie.mov"
         
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
