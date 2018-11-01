@@ -1,14 +1,14 @@
 //
-//  SalonesTableViewController.swift
+//  ImagesTableViewController.swift
 //  Tablas201711
 //
-//  Created by macbook on 16/09/18.
+//  Created by Diogo Burnay on 01/11/18.
 //  Copyright © 2018 Tec de Monterrey. All rights reserved.
 //
 
 import UIKit
 
-class SalonesTableViewController: UITableViewController, UISearchResultsUpdating {
+class ImagesTableViewController: UITableViewController {
 
     var piso:String=""
     
@@ -32,7 +32,7 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
     }
     
     var nuevoArray:[Any]?
-
+    
     var arrayAux:[Any]?
     
     func JSONParseArray(_ string: String) -> [AnyObject]{
@@ -91,14 +91,14 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
         nuevoArray = nuevoArray!.filter{
             let objetoPiso = $0 as![String:Any]
             let s:String = objetoPiso["piso"] as! String;
-            return(s == indexPiso)
+            return(s == "2")
         }
         
         //paso 5: copiar el contenido del arreglo en el arreglo filtrado
         datosFiltrados = nuevoArray!
         
         //Paso 6: usar la vista actual para presentar los resultados de la búsqueda
-        searchController.searchResultsUpdater = self
+        searchController.searchResultsUpdater = self as! UISearchResultsUpdating
         //paso 7: controlar el background de los datos al momento de hacer la búsqueda
         searchController.dimsBackgroundDuringPresentation = false
         //Paso 8: manejar la barra de navegación durante la busuqeda
@@ -159,12 +159,11 @@ class SalonesTableViewController: UITableViewController, UISearchResultsUpdating
         
         let nombre:String = objetoPiso["nombre"] as! String
         let horario:String = objetoPiso["horario"] as! String
-        let id:String = objetoPiso["id"] as! String
         siguienteVista.nombre = nombre
         siguienteVista.horario = horario
-        siguienteVista.idsalon = id
-    
+        
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }
+
 }
