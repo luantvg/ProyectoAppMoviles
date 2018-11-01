@@ -52,6 +52,12 @@ class DetalleViewController: UIViewController {
     }
     
     @IBAction func AR(_ sender: Any) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Modelos") as! ModelosTableViewController
+        
+        
+        siguienteVista.idsalon = idsalon
+        
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
     }
     
     /*

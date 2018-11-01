@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -525,7 +524,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="centered" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -612,7 +611,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
         <scene sceneID="Rdp-Rb-Hnf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tQw-mQ-udq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="General" image="building" selectedImage="building" id="jBg-Xn-ibg"/>
+                    <tabBarItem key="tabBarItem" title="General" image="Glasses" selectedImage="Glasses" id="jBg-Xn-ibg"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xsc-XK-U9M">
@@ -631,7 +630,6 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
         <!--Imagenes del Salón-->
         <scene sceneID="mgu-S5-0kz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MVI-eR-z7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="Imagenes" useStoryboardIdentifierAsRestorationIdentifier="YES" id="b3M-hh-W41" customClass="ImagenesTableViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mea-cx-v9V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -654,13 +652,13 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                     </tableView>
                     <navigationItem key="navigationItem" title="Imagenes del Salón" id="yfD-tM-6Da"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVI-eR-z7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="353" y="3090"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rtx-y2-WR6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cQo-Ju-cnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lLR-WU-Kc3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ngv-ox-nsA">
@@ -672,13 +670,13 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                         <segue destination="b3M-hh-W41" kind="relationship" relationship="rootViewController" id="Et9-K0-XwZ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQo-Ju-cnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-586" y="3090"/>
         </scene>
         <!--Imagenes del Salón-->
         <scene sceneID="eTj-fO-aMW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tOa-Wo-xrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="Videos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pq0-N8-sgA" customClass="VideosTableViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uaq-UP-KEf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -701,13 +699,13 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                     </tableView>
                     <navigationItem key="navigationItem" title="Imagenes del Salón" id="rdD-Yt-7jZ"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOa-Wo-xrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="353" y="3842"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SaB-CT-OxJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VkY-6M-6IP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6nT-yx-13Q" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wCw-zW-cRb">
@@ -719,11 +717,60 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                         <segue destination="Pq0-N8-sgA" kind="relationship" relationship="rootViewController" id="iS0-s8-HYm"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VkY-6M-6IP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-586" y="3842"/>
         </scene>
+        <!--Imagenes del Salón-->
+        <scene sceneID="2BZ-I4-U5d">
+            <objects>
+                <tableViewController storyboardIdentifier="Modelos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fUc-yU-z58" customClass="ModelosTableViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="59u-bP-wHY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntradaSalon" id="IvO-Xq-Mu3" userLabel="EntradaSalon">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IvO-Xq-Mu3" id="mxp-Sg-O0q">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fUc-yU-z58" id="DgE-6X-NSf"/>
+                            <outlet property="delegate" destination="fUc-yU-z58" id="uE2-PB-lLT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Imagenes del Salón" id="4ox-AB-Vkw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hTZ-b3-Cb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="4583"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="upr-eY-Hld">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sMb-7q-BTw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p8i-Bd-REX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fUc-yU-z58" kind="relationship" relationship="rootViewController" id="NHg-34-XKs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfj-zr-ccu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-585" y="4583"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Glasses" width="12" height="12"/>
         <image name="building" width="12" height="12"/>
         <image name="cdtBck" width="512" height="316"/>
         <image name="curvy-arrow" width="896" height="606"/>
