@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045558AE218AA6D6003D9091 /* ARAssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045558AD218AA6D6003D9091 /* ARAssetsViewController.swift */; };
+		045558B0218ADA22003D9091 /* ARVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045558AF218ADA22003D9091 /* ARVideoViewController.swift */; };
 		3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */; };
 		3546B96E1E5B96FD0035B84F /* ListaPisosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546B96D1E5B96FD0035B84F /* ListaPisosTableViewController.swift */; };
 		356B4D3F1E5B8F94002DD52B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B4D3E1E5B8F94002DD52B /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045558AD218AA6D6003D9091 /* ARAssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAssetsViewController.swift; sourceTree = "<group>"; };
+		045558AF218ADA22003D9091 /* ARVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVideoViewController.swift; sourceTree = "<group>"; };
 		3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
 		3546B96D1E5B96FD0035B84F /* ListaPisosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPisosTableViewController.swift; sourceTree = "<group>"; };
 		356B4D3B1E5B8F94002DD52B /* Tablas201711.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tablas201711.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +115,8 @@
 				3B6EF1DC218AE1E500D1DB9D /* ImagenesTableViewController.swift */,
 				3B6EF1DE218AFEEA00D1DB9D /* VideosTableViewController.swift */,
 				7B69A75421876A74008E3F46 /* PanoramicViewController.swift */,
+				045558AD218AA6D6003D9091 /* ARAssetsViewController.swift */,
+				045558AF218ADA22003D9091 /* ARVideoViewController.swift */,
 			);
 			path = Tablas201711;
 			sourceTree = "<group>";
@@ -224,6 +230,8 @@
 				3B6EF1DF218AFEEA00D1DB9D /* VideosTableViewController.swift in Sources */,
 				3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */,
 				7B69A75521876A74008E3F46 /* PanoramicViewController.swift in Sources */,
+				045558AE218AA6D6003D9091 /* ARAssetsViewController.swift in Sources */,
+				045558B0218ADA22003D9091 /* ARVideoViewController.swift in Sources */,
 				7B385E0721877AA000901B55 /* CTPanoramaView.swift in Sources */,
 				356B4D431E5B8F94002DD52B /* SecondViewController.swift in Sources */,
 				3B6EF1DD218AE1E500D1DB9D /* ImagenesTableViewController.swift in Sources */,
@@ -374,6 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7XX5VVLZ8F;
 				INFOPLIST_FILE = Tablas201711/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DiogoBTEC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7XX5VVLZ8F;
 				INFOPLIST_FILE = Tablas201711/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DiogoBTEC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

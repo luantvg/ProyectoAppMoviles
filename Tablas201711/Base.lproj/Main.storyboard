@@ -418,6 +418,79 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
             </objects>
             <point key="canvasLocation" x="1214" y="3090"/>
         </scene>
+        <!--Assets View Controller-->
+        <scene sceneID="rPY-57-qAQ">
+            <objects>
+                <viewController storyboardIdentifier="ARAsset" id="YBk-1A-6ZE" customClass="ARAssetsViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X5a-UF-UEt"/>
+                        <viewControllerLayoutGuide type="bottom" id="3BA-yR-AWM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ep-Hf-kGY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GTC-zI-FJE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rG5-MI-NTl" appends="YES" id="snF-nh-NuX"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="GTC-zI-FJE" id="9uW-RQ-1lf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="765-CT-8ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="rG5-MI-NTl">
+                    <connections>
+                        <action selector="escalar:" destination="YBk-1A-6ZE" id="mnq-Sw-iPs"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="l4G-d4-y3J">
+                    <connections>
+                        <action selector="rotar:" destination="YBk-1A-6ZE" id="75c-lv-4f9"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="69T-hk-2Q8">
+                    <connections>
+                        <action selector="rotate:" destination="YBk-1A-6ZE" id="LXS-BF-sbQ"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3997.5999999999999" y="1332.6836581709147"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="Gjs-Bb-ibm">
+            <objects>
+                <viewController storyboardIdentifier="ARVideo" id="F1I-Cp-p20" customClass="ARVideoViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sIO-W9-8Hc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ny2-r3-vff"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lOE-TL-0Kb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGZ-k7-GYA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="mGZ-k7-GYA" id="HYz-sW-QaE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCg-yY-3pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4672.8000000000002" y="1330.8845577211396"/>
+        </scene>
         <!--Salones-->
         <scene sceneID="jZM-DF-rXO">
             <objects>
