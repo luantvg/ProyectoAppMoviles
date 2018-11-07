@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -329,7 +329,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-D3-76M">
-                                <rect key="frame" x="110" y="582" width="155" height="65"/>
+                                <rect key="frame" x="24" y="582" width="155" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="YrT-r7-oV8"/>
                                 </constraints>
@@ -352,31 +352,51 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPL-b4-Cks">
+                                <rect key="frame" x="204" y="582" width="155" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="3CM-HE-3Lg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="MLAR"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="MLAR:" destination="HHF-bc-zDl" eventType="touchUpInside" id="YHS-ca-Uv2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fPL-b4-Cks" firstAttribute="trailing" secondItem="mWs-8b-wPt" secondAttribute="trailing" id="7wt-SJ-Z1F"/>
                             <constraint firstItem="5NY-VK-t2S" firstAttribute="top" secondItem="BND-Ms-jt3" secondAttribute="bottom" constant="20" id="DvJ-xP-g1C"/>
                             <constraint firstItem="ONH-14-vg0" firstAttribute="centerX" secondItem="gRW-JN-wyI" secondAttribute="centerX" id="Ess-L1-VwA"/>
                             <constraint firstAttribute="trailing" secondItem="HKf-ZF-gmd" secondAttribute="trailing" id="Fns-I0-4B5"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="trailing" secondItem="gRW-JN-wyI" secondAttribute="trailing" id="Gz1-Nv-xRo"/>
                             <constraint firstItem="iBB-F0-b9b" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leadingMargin" id="S2C-cw-YaL"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="top" secondItem="Nud-UE-Pxg" secondAttribute="bottom" constant="36" id="Sa4-ot-UfQ"/>
-                            <constraint firstItem="dhd-D3-76M" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leadingMargin" constant="94" id="Tdx-Ti-gtC"/>
+                            <constraint firstItem="dhd-D3-76M" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leadingMargin" constant="8" id="Tdx-Ti-gtC"/>
                             <constraint firstItem="mWs-8b-wPt" firstAttribute="trailing" secondItem="9sQ-sG-7K8" secondAttribute="trailingMargin" id="UYJ-5t-0I9"/>
                             <constraint firstItem="vAF-1i-mIa" firstAttribute="top" secondItem="iBB-F0-b9b" secondAttribute="bottom" constant="111" id="UfD-8V-hAa"/>
                             <constraint firstItem="dhd-D3-76M" firstAttribute="top" secondItem="mWs-8b-wPt" secondAttribute="bottom" constant="26" id="W1P-E7-fcl"/>
                             <constraint firstItem="gRW-JN-wyI" firstAttribute="trailing" secondItem="5NY-VK-t2S" secondAttribute="trailing" id="WbS-nn-LoT"/>
                             <constraint firstItem="5NY-VK-t2S" firstAttribute="centerX" secondItem="iBB-F0-b9b" secondAttribute="centerX" constant="94" id="Wc4-70-wHV"/>
                             <constraint firstItem="gRW-JN-wyI" firstAttribute="leading" secondItem="5NY-VK-t2S" secondAttribute="leading" id="XK7-X0-1XP"/>
+                            <constraint firstItem="fPL-b4-Cks" firstAttribute="leading" secondItem="mWs-8b-wPt" secondAttribute="leading" id="Y4J-hg-VNF"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="leading" secondItem="gRW-JN-wyI" secondAttribute="leading" id="cXz-CV-UOr"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leading" id="eiT-kf-Brq"/>
                             <constraint firstItem="ONH-14-vg0" firstAttribute="top" secondItem="HKf-ZF-gmd" secondAttribute="bottom" constant="101" id="ijP-dZ-Fko"/>
                             <constraint firstItem="BND-Ms-jt3" firstAttribute="top" secondItem="gRW-JN-wyI" secondAttribute="bottom" constant="28" id="kNQ-Ft-LaX"/>
                             <constraint firstItem="gRW-JN-wyI" firstAttribute="top" secondItem="ONH-14-vg0" secondAttribute="bottom" constant="21" id="kS6-Cs-2ef"/>
                             <constraint firstItem="iBB-F0-b9b" firstAttribute="top" secondItem="5NY-VK-t2S" secondAttribute="bottom" constant="21" id="lQj-ca-dUc"/>
-                            <constraint firstItem="dhd-D3-76M" firstAttribute="centerX" secondItem="5NY-VK-t2S" secondAttribute="centerX" id="lep-Ce-JmI"/>
+                            <constraint firstItem="dhd-D3-76M" firstAttribute="centerX" secondItem="5NY-VK-t2S" secondAttribute="centerX" constant="-86" id="lep-Ce-JmI"/>
                             <constraint firstItem="mWs-8b-wPt" firstAttribute="baseline" secondItem="iBB-F0-b9b" secondAttribute="baseline" id="npg-Am-BDx"/>
                             <constraint firstItem="BND-Ms-jt3" firstAttribute="centerX" secondItem="5NY-VK-t2S" secondAttribute="centerX" id="npx-Za-aiX"/>
+                            <constraint firstItem="fPL-b4-Cks" firstAttribute="baseline" secondItem="dhd-D3-76M" secondAttribute="baseline" id="qdj-ki-jrt"/>
                             <constraint firstItem="mWs-8b-wPt" firstAttribute="leading" secondItem="iBB-F0-b9b" secondAttribute="trailing" constant="33" id="uK8-0j-Uej"/>
                         </constraints>
                     </view>
@@ -445,6 +465,11 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="765-CT-8ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nMh-AH-FXT">
+                    <connections>
+                        <action selector="tapEjecutado:" destination="YBk-1A-6ZE" id="ndl-Mn-xxh"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <pinchGestureRecognizer id="rG5-MI-NTl">
                     <connections>
                         <action selector="escalar:" destination="YBk-1A-6ZE" id="mnq-Sw-iPs"/>
@@ -538,6 +563,38 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-586" y="-88"/>
+        </scene>
+        <!--Portal View Controller-->
+        <scene sceneID="BL0-R6-3LI">
+            <objects>
+                <viewController storyboardIdentifier="Portal" id="bGh-Bh-MhD" customClass="PortalViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AF2-Ja-SSv"/>
+                        <viewControllerLayoutGuide type="bottom" id="pop-hz-exI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wsu-HV-zHN" customClass="porta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Cp-KE-jD9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="8Cp-KE-jD9" id="hZP-1s-geV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewA-1m-cOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="R6s-KT-Ni3">
+                    <connections>
+                        <action selector="tapEjecutado2:" destination="bGh-Bh-MhD" id="GqQ-t2-xli"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="-90.404797601199405"/>
         </scene>
         <!--Salones-->
         <scene sceneID="X6H-5M-f5s">

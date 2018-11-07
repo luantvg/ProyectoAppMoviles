@@ -88,6 +88,21 @@ class DetalleViewController: UIViewController {
         }
     }
     
+    @IBAction func MLAR(_ sender: Any) {
+    
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            
+            let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Portal") as! PortalViewController
+            
+            
+            siguienteVista.idsalon = self.idsalon
+            
+            self.navigationController?.pushViewController(siguienteVista, animated: true)
+            
+            self.activityIndicator.stopAnimating()
+        }
+    
+    }
     /*
     // MARK: - Navigation
 
