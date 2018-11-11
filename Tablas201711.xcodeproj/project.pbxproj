@@ -18,13 +18,13 @@
 		356B4D481E5B8F94002DD52B /* cdtTec.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D471E5B8F94002DD52B /* cdtTec.xcassets */; };
 		356B4D4B1E5B8F94002DD52B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D491E5B8F94002DD52B /* LaunchScreen.storyboard */; };
 		3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */; };
-		3988E57C2193939400909C7B /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3988E57B2193939400909C7B /* Resnet50.mlmodel */; };
 		3988E57E21939A0C00909C7B /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3988E57D21939A0C00909C7B /* PortalViewController.swift */; };
 		3B6EF1D9218AB24400D1DB9D /* GeneralTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1D8218AB24400D1DB9D /* GeneralTableViewController.swift */; };
 		3B6EF1DD218AE1E500D1DB9D /* ImagenesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1DC218AE1E500D1DB9D /* ImagenesTableViewController.swift */; };
 		3B6EF1DF218AFEEA00D1DB9D /* VideosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1DE218AFEEA00D1DB9D /* VideosTableViewController.swift */; };
 		3B6EF1E2218B04E300D1DB9D /* ModelosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1E1218B04E300D1DB9D /* ModelosTableViewController.swift */; };
 		3B6EF1E4218B2B3F00D1DB9D /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */; };
+		3BB0FF39219864A400FCA763 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0FF38219864A400FCA763 /* Resnet50.mlmodel */; };
 		7B385E0621877AA000901B55 /* CTPieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B385E0421877AA000901B55 /* CTPieSliceView.swift */; };
 		7B385E0721877AA000901B55 /* CTPanoramaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B385E0521877AA000901B55 /* CTPanoramaView.swift */; };
 		7B69A75521876A74008E3F46 /* PanoramicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69A75421876A74008E3F46 /* PanoramicViewController.swift */; };
@@ -62,13 +62,13 @@
 		356B4D4A1E5B8F94002DD52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356B4D4C1E5B8F94002DD52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
-		3988E57B2193939400909C7B /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = "../../../../Downloads/ML+AR 2/ML+AR/Resnet50.mlmodel"; sourceTree = "<group>"; };
 		3988E57D21939A0C00909C7B /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
 		3B6EF1D8218AB24400D1DB9D /* GeneralTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTableViewController.swift; sourceTree = "<group>"; };
 		3B6EF1DC218AE1E500D1DB9D /* ImagenesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenesTableViewController.swift; sourceTree = "<group>"; };
 		3B6EF1DE218AFEEA00D1DB9D /* VideosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableViewController.swift; sourceTree = "<group>"; };
 		3B6EF1E1218B04E300D1DB9D /* ModelosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelosTableViewController.swift; sourceTree = "<group>"; };
 		3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		3BB0FF38219864A400FCA763 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		7B385E0421877AA000901B55 /* CTPieSliceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPieSliceView.swift; sourceTree = "<group>"; };
 		7B385E0521877AA000901B55 /* CTPanoramaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPanoramaView.swift; sourceTree = "<group>"; };
 		7B69A75421876A74008E3F46 /* PanoramicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramicViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		356B4D3D1E5B8F94002DD52B /* Tablas201711 */ = {
 			isa = PBXGroup;
 			children = (
-				3988E57B2193939400909C7B /* Resnet50.mlmodel */,
+				3BB0FF38219864A400FCA763 /* Resnet50.mlmodel */,
 				356B4D3E1E5B8F94002DD52B /* AppDelegate.swift */,
 				356B4D401E5B8F94002DD52B /* FirstViewController.swift */,
 				3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */,
@@ -174,7 +174,7 @@
 				TargetAttributes = {
 					356B4D3A1E5B8F94002DD52B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2RXAFZLG32;
+						DevelopmentTeam = 7XX5VVLZ8F;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
@@ -249,7 +249,7 @@
 				356B4D431E5B8F94002DD52B /* SecondViewController.swift in Sources */,
 				3B6EF1DD218AE1E500D1DB9D /* ImagenesTableViewController.swift in Sources */,
 				356B4D3F1E5B8F94002DD52B /* AppDelegate.swift in Sources */,
-				3988E57C2193939400909C7B /* Resnet50.mlmodel in Sources */,
+				3BB0FF39219864A400FCA763 /* Resnet50.mlmodel in Sources */,
 				3B6EF1D9218AB24400D1DB9D /* GeneralTableViewController.swift in Sources */,
 				3B6EF1E2218B04E300D1DB9D /* ModelosTableViewController.swift in Sources */,
 				3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */,
@@ -396,11 +396,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2RXAFZLG32;
+				DEVELOPMENT_TEAM = 7XX5VVLZ8F;
 				INFOPLIST_FILE = Tablas201711/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = luisvilla;
+				PRODUCT_BUNDLE_IDENTIFIER = "ICEDETEC-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
@@ -411,11 +411,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2RXAFZLG32;
+				DEVELOPMENT_TEAM = 7XX5VVLZ8F;
 				INFOPLIST_FILE = Tablas201711/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = luisvilla;
+				PRODUCT_BUNDLE_IDENTIFIER = "ICEDETEC-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
