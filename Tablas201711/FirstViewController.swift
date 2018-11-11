@@ -10,11 +10,39 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    var hide = true;
+    
+    @IBOutlet weak var infoButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var locationButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        infoButton.isHidden=true
+        shareButton.isHidden=true
+        locationButton.isHidden=true
     }
 
+    @IBAction func ShowMore(_ sender: Any) {
+    
+        if hide {
+            infoButton.isHidden=false
+            shareButton.isHidden=false
+            locationButton.isHidden=false
+            
+            hide=false
+            
+        }else{
+            infoButton.isHidden=true
+            shareButton.isHidden=true
+            locationButton.isHidden=true
+            
+            hide=true
+        }
+        
+    }
+    
     @IBAction func compartir(_ sender: Any) {
         print("Hola")
         
@@ -36,7 +64,14 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    @IBAction func abrirMapas(_ sender: Any) {
+    
+        print("abro mapa")
+        
+    }
+    
 
 }
 

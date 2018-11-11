@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5W-E1-MPQ">
-                                <rect key="frame" x="28" y="580" width="22" height="22"/>
+                                <rect key="frame" x="21" y="540" width="23" height="22"/>
                                 <connections>
                                     <segue destination="06r-em-eTN" kind="presentation" id="0v1-6Z-RmR"/>
                                 </connections>
@@ -59,7 +59,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 <rect key="frame" x="0.0" y="161" width="375" height="457"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al5-kJ-Eyf">
-                                <rect key="frame" x="344" y="580" width="15" height="22"/>
+                                <rect key="frame" x="24" y="500" width="15" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="opX-Xk-0Bc"/>
                                 </constraints>
@@ -68,30 +68,58 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                     <action selector="compartir:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vKN-0e-h4f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fE-2s-xyp">
+                                <rect key="frame" x="21" y="580" width="22" height="22"/>
+                                <connections>
+                                    <action selector="ShowMore:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Omz-lB-60f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWE-bZ-n2X">
+                                <rect key="frame" x="13" y="451" width="39" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="1e8-xZ-iMP"/>
+                                    <constraint firstAttribute="height" constant="39" id="thQ-Sj-Wtq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="location"/>
+                                <connections>
+                                    <action selector="abrirMapas:" destination="9pv-A4-QxB" eventType="touchUpInside" id="kTh-4R-dWD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c4I-Pp-QbZ" firstAttribute="leading" secondItem="KQZ-1w-vlD" secondAttribute="leading" id="0eD-qp-EFf"/>
+                            <constraint firstItem="4fE-2s-xyp" firstAttribute="leading" secondItem="R5W-E1-MPQ" secondAttribute="leading" id="3jU-nr-RWd"/>
                             <constraint firstItem="P5F-PE-nec" firstAttribute="top" secondItem="ZK1-Ii-9k1" secondAttribute="bottom" constant="86" id="Aye-IN-IPs"/>
                             <constraint firstItem="c4I-Pp-QbZ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="141" id="D1L-Yo-ens"/>
                             <constraint firstItem="ZK1-Ii-9k1" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="11" id="DFz-U5-U0j"/>
                             <constraint firstItem="P5F-PE-nec" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="-41" id="GqK-kf-NFx"/>
                             <constraint firstItem="P5F-PE-nec" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="Igv-4P-tAp"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="R5W-E1-MPQ" secondAttribute="bottom" constant="16" id="L6a-yl-SWR"/>
-                            <constraint firstItem="R5W-E1-MPQ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="12" id="TLl-GT-2iI"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="R5W-E1-MPQ" secondAttribute="bottom" constant="56" id="L6a-yl-SWR"/>
+                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="top" secondItem="GWE-bZ-n2X" secondAttribute="bottom" constant="10" id="Nh3-i2-IUA"/>
+                            <constraint firstItem="R5W-E1-MPQ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="5" id="TLl-GT-2iI"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="ZK1-Ii-9k1" secondAttribute="centerX" id="WNj-gp-IqK"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cdb-RY-zfT"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="4fE-2s-xyp" secondAttribute="bottom" constant="16" id="eap-6W-jV9"/>
                             <constraint firstItem="c4I-Pp-QbZ" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="fH3-4L-kMp"/>
+                            <constraint firstItem="GWE-bZ-n2X" firstAttribute="centerX" secondItem="4fE-2s-xyp" secondAttribute="centerX" id="lba-VR-H2w"/>
+                            <constraint firstItem="GWE-bZ-n2X" firstAttribute="centerX" secondItem="R5W-E1-MPQ" secondAttribute="centerX" id="pqK-0v-Cgl"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="46" id="qY2-Qf-k2U"/>
                             <constraint firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" id="sc3-EL-m2O"/>
-                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="top" secondItem="R5W-E1-MPQ" secondAttribute="top" id="uWv-j2-AOu"/>
-                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="leading" secondItem="P5F-PE-nec" secondAttribute="trailing" constant="26" id="vnc-12-Gjf"/>
+                            <constraint firstItem="GWE-bZ-n2X" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-3" id="t98-pp-J4C"/>
+                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="top" secondItem="R5W-E1-MPQ" secondAttribute="top" constant="-40" id="uWv-j2-AOu"/>
+                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="leading" secondItem="P5F-PE-nec" secondAttribute="trailing" constant="-294" id="vnc-12-Gjf"/>
                             <constraint firstItem="c4I-Pp-QbZ" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" id="xCB-Tn-iye"/>
                             <constraint firstItem="ZK1-Ii-9k1" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="22" id="xre-NJ-9NV"/>
-                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="xv6-ai-dtR"/>
+                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="-320" id="xv6-ai-dtR"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homeIcon" selectedImage="homeIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="infoButton" destination="R5W-E1-MPQ" id="LWC-W5-KFc"/>
+                        <outlet property="locationButton" destination="GWE-bZ-n2X" id="Xvc-no-umT"/>
+                        <outlet property="shareButton" destination="al5-kJ-Eyf" id="Aky-Jf-GYB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -846,6 +874,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
         <image name="cdtBck" width="512" height="316"/>
         <image name="curvy-arrow" width="896" height="606"/>
         <image name="homeIcon" width="12" height="12"/>
+        <image name="location" width="256" height="256"/>
         <image name="logoTec" width="2042" height="541"/>
         <image name="share" width="60" height="86"/>
     </resources>
