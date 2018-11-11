@@ -13,8 +13,6 @@ import Vision
 
 class PortalViewController: UIViewController , ARSCNViewDelegate {
     
-    @IBOutlet var sceneView: ARSCNView!
-    
     var idsalon:String=""
     var imgUrl:String=""
     
@@ -27,7 +25,6 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
     //4. Presentar los datos resultados del modelo
     @IBAction func tapEjecutado2(_ sender: UITapGestureRecognizer) {
         
-        print("Me dio")
         //obtener la vista donde se va a trabajar
         let vista = sender.view as! ARSCNView
         //ubicar el toque en el centro de la vista
@@ -102,6 +99,8 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
         
         
     }
+
+    @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
