@@ -69,10 +69,10 @@ class FirstViewController: UIViewController {
     
     @IBAction func abrirMapas(_ sender: Any) {
         
-        let lat:CLLocationDegrees = 19.4357619
-        let long:CLLocationDegrees = -99.1441192
+        let lat:CLLocationDegrees = 19.283523
+        let long:CLLocationDegrees = -99.135497
         
-        let regionDistance:CLLocationDistance = 1000
+        let regionDistance:CLLocationDistance = 1
         let coordinates = CLLocationCoordinate2D(latitude: lat,longitude: long)
         
         let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
@@ -82,7 +82,7 @@ class FirstViewController: UIViewController {
         let placeMark = MKPlacemark(coordinate: coordinates)
         let mapItem = MKMapItem(placemark: placeMark)
         
-        mapItem.name = "Alameda Central , Mex"
+        mapItem.name = "CEDETEC , ITESM CCM"
         
         mapItem.openInMaps(launchOptions: options)
     }
