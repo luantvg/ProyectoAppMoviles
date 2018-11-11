@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class FirstViewController: UIViewController {
 
@@ -67,9 +68,23 @@ class FirstViewController: UIViewController {
     
     
     @IBAction func abrirMapas(_ sender: Any) {
-    
-        print("abro mapa")
         
+        let lat:CLLocationDegrees = 19.4357619
+        let long:CLLocationDegrees = -99.1441192
+        
+        let regionDistance:CLLocationDistance = 1000
+        let coordinates = CLLocationCoordinate2D(latitude: lat,longitude: long)
+        
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        
+        let options = [MKLaunchOptionsMapCenterKey : NSValue(mkCoordinate: regionSpan.center), MKLaunchOptionsMapSpanKey : NSValue(mkCoordinateSpan: regionSpan.span)]
+        
+        let placeMark = MKPlacemark(coordinate: coordinates)
+        let mapItem = MKMapItem(placemark: placeMark)
+        
+        mapItem.name = "Alameda Central , Mex"
+        
+        mapItem.openInMaps(launchOptions: options)
     }
     
 
