@@ -83,6 +83,8 @@ class FirstViewController: UIViewController {
         let mapItem = MKMapItem(placemark: placeMark)
         
         mapItem.name = "CEDETEC , ITESM CCM"
+        mapItem.url = URL(string: "https://tec.mx/es/somostecccm")
+        mapItem.phoneNumber = "5554832025"
         
         mapItem.openInMaps(launchOptions: options)
     }
