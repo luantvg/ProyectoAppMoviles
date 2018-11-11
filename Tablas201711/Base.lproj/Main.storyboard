@@ -22,10 +22,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5W-E1-MPQ">
                                 <rect key="frame" x="28" y="580" width="22" height="22"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.4695411115" green="0.82750774689999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
                                 <connections>
                                     <segue destination="06r-em-eTN" kind="presentation" id="0v1-6Z-RmR"/>
                                 </connections>
@@ -63,6 +59,16 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 <rect key="frame" x="0.0" y="161" width="375" height="457"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al5-kJ-Eyf">
+                                <rect key="frame" x="344" y="580" width="15" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="opX-Xk-0Bc"/>
+                                </constraints>
+                                <state key="normal" title="Share" image="share"/>
+                                <connections>
+                                    <action selector="compartir:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vKN-0e-h4f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -76,14 +82,17 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cdb-RY-zfT"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="46" id="qY2-Qf-k2U"/>
                             <constraint firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" id="sc3-EL-m2O"/>
+                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="top" secondItem="R5W-E1-MPQ" secondAttribute="top" id="uWv-j2-AOu"/>
+                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="leading" secondItem="P5F-PE-nec" secondAttribute="trailing" constant="26" id="vnc-12-Gjf"/>
                             <constraint firstItem="ZK1-Ii-9k1" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="22" id="xre-NJ-9NV"/>
+                            <constraint firstItem="al5-kJ-Eyf" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="xv6-ai-dtR"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homeIcon" selectedImage="homeIcon" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586" y="681"/>
+            <point key="canvasLocation" x="-586.39999999999998" y="680.5097451274363"/>
         </scene>
         <!--Acerca De View Controller-->
         <scene sceneID="r8c-fW-q1C">
@@ -835,5 +844,6 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
         <image name="curvy-arrow" width="896" height="606"/>
         <image name="homeIcon" width="12" height="12"/>
         <image name="logoTec" width="2042" height="541"/>
+        <image name="share" width="60" height="86"/>
     </resources>
 </document>
