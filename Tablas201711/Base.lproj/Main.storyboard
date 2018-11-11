@@ -55,9 +55,8 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cdtBck" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-Pp-QbZ">
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cdtBck" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-Pp-QbZ">
                                 <rect key="frame" x="0.0" y="161" width="375" height="457"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al5-kJ-Eyf">
                                 <rect key="frame" x="344" y="580" width="15" height="22"/>
@@ -72,7 +71,9 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="c4I-Pp-QbZ" firstAttribute="leading" secondItem="KQZ-1w-vlD" secondAttribute="leading" id="0eD-qp-EFf"/>
                             <constraint firstItem="P5F-PE-nec" firstAttribute="top" secondItem="ZK1-Ii-9k1" secondAttribute="bottom" constant="86" id="Aye-IN-IPs"/>
+                            <constraint firstItem="c4I-Pp-QbZ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="141" id="D1L-Yo-ens"/>
                             <constraint firstItem="ZK1-Ii-9k1" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="11" id="DFz-U5-U0j"/>
                             <constraint firstItem="P5F-PE-nec" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" constant="-41" id="GqK-kf-NFx"/>
                             <constraint firstItem="P5F-PE-nec" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="Igv-4P-tAp"/>
@@ -80,10 +81,12 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                             <constraint firstItem="R5W-E1-MPQ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="12" id="TLl-GT-2iI"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="ZK1-Ii-9k1" secondAttribute="centerX" id="WNj-gp-IqK"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cdb-RY-zfT"/>
+                            <constraint firstItem="c4I-Pp-QbZ" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="fH3-4L-kMp"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="46" id="qY2-Qf-k2U"/>
                             <constraint firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" id="sc3-EL-m2O"/>
                             <constraint firstItem="al5-kJ-Eyf" firstAttribute="top" secondItem="R5W-E1-MPQ" secondAttribute="top" id="uWv-j2-AOu"/>
                             <constraint firstItem="al5-kJ-Eyf" firstAttribute="leading" secondItem="P5F-PE-nec" secondAttribute="trailing" constant="26" id="vnc-12-Gjf"/>
+                            <constraint firstItem="c4I-Pp-QbZ" firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" id="xCB-Tn-iye"/>
                             <constraint firstItem="ZK1-Ii-9k1" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="22" id="xre-NJ-9NV"/>
                             <constraint firstItem="al5-kJ-Eyf" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="xv6-ai-dtR"/>
                         </constraints>
