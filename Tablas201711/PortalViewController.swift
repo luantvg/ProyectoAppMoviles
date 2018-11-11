@@ -16,6 +16,7 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     
     var idsalon:String=""
+    var imgUrl:String=""
     
     private var hitTestResult: ARHitTestResult!
     private var resnetModel = Resnet50()
@@ -26,7 +27,7 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
     //4. Presentar los datos resultados del modelo
     @IBAction func tapEjecutado2(_ sender: UITapGestureRecognizer) {
         
-        print(0)
+        print("Me dio")
         //obtener la vista donde se va a trabajar
         let vista = sender.view as! ARSCNView
         //ubicar el toque en el centro de la vista
@@ -88,7 +89,7 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
         let letrero = SCNText(string: entrada
             , extrusionDepth: 0)
         print(letrero)
-        letrero.alignmentMode = CATextLayerAlignmentMode.center.rawValue
+        //letrero.alignmentMode = CATextLayerAlignmentMode.center.rawValue
         letrero.firstMaterial?.diffuse.contents = UIColor.blue
         letrero.firstMaterial?.specular.contents = UIColor.white
         letrero.firstMaterial?.isDoubleSided = true
@@ -104,6 +105,8 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("si entro")
         
         // Set the view's delegate
         sceneView.delegate = self

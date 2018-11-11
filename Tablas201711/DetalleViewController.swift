@@ -15,7 +15,7 @@ class DetalleViewController: UIViewController {
     var nombre:String=""
     var horario:String=""
     var idsalon:String=""
-    //var url:String=""
+    var urlPanono:String=""
     
     @IBOutlet weak var laNombre: UILabel!
     @IBOutlet weak var laHorario: UILabel!
@@ -23,6 +23,8 @@ class DetalleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        urlPanono = getPanono()
+                
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.style = UIActivityIndicatorView.Style.gray
@@ -96,6 +98,7 @@ class DetalleViewController: UIViewController {
             
             
             siguienteVista.idsalon = self.idsalon
+            siguienteVista.imgUrl = self.urlPanono
             
             self.navigationController?.pushViewController(siguienteVista, animated: true)
             
@@ -103,6 +106,30 @@ class DetalleViewController: UIViewController {
         }
     
     }
+    
+    func getPanono() -> String {
+        
+        var nuevoArray:[Any]?
+
+        let direccion = "http://martinmolina.com.mx/201813/data/SalonesPorPiso/FotosSalones.json"
+        
+        let url = URL(string: direccion)
+        let datos = try? Data(contentsOf: url!)
+        
+        nuevoArray = try! JSONSerialization.jsonObject(with: datos! ) as? [Any]
+        
+        nuevoArray = nuevoArray!.filter{
+            let objetoPiso = $0 as![String:Any]
+            let s:String = objetoPiso["id"] as! String;
+            return(s == idsalon)
+        }
+        
+        
+        let objetoPiso = nuevoArray?[0] as! [String: Any]
+        
+        return objetoPiso["url"] as! String
+    }
+    
     /*
     // MARK: - Navigation
 
