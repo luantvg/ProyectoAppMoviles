@@ -15,16 +15,58 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
     
     var idsalon:String=""
     var imgUrl:String=""
-    
+    //Machine Learning
     private var hitTestResult: ARHitTestResult!
     private var resnetModel = Resnet50()
     private var visionRequests = [VNRequest]()
+     @IBOutlet weak var sceneView: ARSCNView!
     //1. cargar el modelo de la red
     //2. registrar el gesto de tap
     //3. instanciar el modelo y enviar la imagen
     //4. Presentar los datos resultados del modelo
     
-    @IBAction func TapDone(_ sender: UITapGestureRecognizer) {
+    //Portal
+    
+    @IBOutlet weak var planeDetected: UILabel!
+    let configuration = ARWorldTrackingConfiguration()
+    
+    @objc func tapDone(sender: UITapGestureRecognizer) {
+        print("tap")
+        guard let sceneView = sender.view as? ARSCNView else {return}
+        let touchLocation = sender.location(in: sceneView)
+        //obtener los resultados del tap sobre el plano horizontal
+        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
+        if !hitTestResult.isEmpty{
+            //cargar la escena
+            self.addPortal(hitTestResult: hitTestResult.first!)
+        }
+        else{
+            // no hubo resultado
+        }
+    }
+    
+    func addPortal(hitTestResult:ARHitTestResult)
+    {
+        //let catPictureURL = URL(string: imgUrl)!
+        //let dataIMG = try? Data(contentsOf: catPictureURL)
+        //let image = UIImage(data: dataIMG!)
+        let portalScene = SCNScene(named:"escenes.sncassets/Portal.scn")
+        let portalNode = portalScene?.rootNode.childNode(withName: "Portal", recursively: false)
+        //convertir las coordenadas del rayo del tap a coordenadas del mundo real
+        let transform = hitTestResult.worldTransform
+        let planeXposition = transform.columns.3.x
+        let planeYposition = transform.columns.3.y
+        let planeZposition = transform.columns.3.z
+        portalNode?.position = SCNVector3(planeXposition,planeYposition,planeZposition)
+        self.sceneView.scene.rootNode.addChildNode(portalNode!)
+        
+    }
+
+    
+    
+    //ML
+    
+    @objc func doubleTapped(sender: UITapGestureRecognizer){
         print("tap")
         //obtener la vista donde se va a trabajar
         let vista = sender.view as! ARSCNView
@@ -101,27 +143,42 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
         
     }
 
-    @IBOutlet var sceneView: ARSCNView!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapDone))
+        tap.numberOfTapsRequired = 1
+        self.sceneView.addGestureRecognizer(tap)
+        
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+        doubleTap.numberOfTapsRequired = 2
+        self.sceneView.addGestureRecognizer(doubleTap)
+        
+        tap.require(toFail: doubleTap)
+        
         print("si entro")
         
         // Set the view's delegate
-        sceneView.delegate = self
+        //sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        //sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene()
+        //let scene = SCNScene()
         
         // Set the scene to the view
-        sceneView.scene = scene
+        //sceneView.scene = scene
+        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        self.configuration.planeDetection = .horizontal
+        self.sceneView.session.run(configuration)
+        self.sceneView.delegate = self
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    /*override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Create a session configuration
@@ -129,7 +186,7 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
         
         // Run the view's session
         sceneView.session.run(configuration)
-    }
+    }*/
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -141,6 +198,18 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        print("rendering")
+        guard anchor is ARPlaneAnchor else {return} //se agrego un plano
+        //ejecución asincrona en donde se modifica la etiqueta de plano detectado
+        DispatchQueue.main.async {
+            self.planeDetected.isHidden = false
+            print("Plano detectado")
+        }
+        //espera 3 segundos antes de desaparecer
+        DispatchQueue.main.asyncAfter(deadline: .now()+3){self.planeDetected.isHidden = true}
     }
     
     // MARK: - ARSCNViewDelegate
