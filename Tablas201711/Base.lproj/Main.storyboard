@@ -612,16 +612,20 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                         <viewControllerLayoutGuide type="top" id="AF2-Ja-SSv"/>
                         <viewControllerLayoutGuide type="bottom" id="pop-hz-exI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wsu-HV-zHN" customClass="porta">
+                    <view key="view" contentMode="scaleToFill" id="wsu-HV-zHN" userLabel="View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Cp-KE-jD9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="R6s-KT-Ni3" appends="YES" id="CRT-TY-rpE"/>
+                                </connections>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="8Cp-KE-jD9" id="zqR-FM-UAi"/>
@@ -630,11 +634,11 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewA-1m-cOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="R6s-KT-Ni3">
                     <connections>
-                        <action selector="tapEjecutado2:" destination="bGh-Bh-MhD" id="GqQ-t2-xli"/>
+                        <action selector="TapDone:" destination="bGh-Bh-MhD" id="6Gv-RA-qNY"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="200.80000000000001" y="-90.404797601199405"/>
+            <point key="canvasLocation" x="2034" y="3842"/>
         </scene>
         <!--Salones-->
         <scene sceneID="X6H-5M-f5s">

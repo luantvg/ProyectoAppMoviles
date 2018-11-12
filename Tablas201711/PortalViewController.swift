@@ -23,8 +23,9 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
     //2. registrar el gesto de tap
     //3. instanciar el modelo y enviar la imagen
     //4. Presentar los datos resultados del modelo
-    @IBAction func tapEjecutado2(_ sender: UITapGestureRecognizer) {
-        
+    
+    @IBAction func TapDone(_ sender: UITapGestureRecognizer) {
+        print("tap")
         //obtener la vista donde se va a trabajar
         let vista = sender.view as! ARSCNView
         //ubicar el toque en el centro de la vista
@@ -46,7 +47,6 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
         self.hitTestResult = hitTestResult
         performVisionRequest(pixelBuffer: imagenPixeles)
     }
-    
     
     private func performVisionRequest(pixelBuffer: CVPixelBuffer)
     {
@@ -80,13 +80,14 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
         }
         
     }
+    
     private func desplegarTexto(entrada: String)
     {
         
         let letrero = SCNText(string: entrada
             , extrusionDepth: 0)
         print(letrero)
-        //letrero.alignmentMode = CATextLayerAlignmentMode.center.rawValue
+        letrero.alignmentMode = CATextLayerAlignmentMode.center.rawValue
         letrero.firstMaterial?.diffuse.contents = UIColor.blue
         letrero.firstMaterial?.specular.contents = UIColor.white
         letrero.firstMaterial?.isDoubleSided = true
