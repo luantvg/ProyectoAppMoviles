@@ -69,28 +69,26 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
         //nuevoArray=(JSONParseArray(datosJSON) as NSArray) as! [Any]
         
         let url = URL(string: direccion)
-        
-        do{
+ 
+        do {
             let datos = try Data(contentsOf: url!)
             
-            nuevoArray = try! JSONSerialization.jsonObject(with: datos ) as? [Any]
+            nuevoArray = try JSONSerialization.jsonObject(with: datos ) as? [Any]
+            nuevoArray = nuevoArray!.filter{
+                let objetoPiso = $0 as![String:Any]
+                let s:String = objetoPiso["id"] as! String;
+                return(s == idsalon)
+            }
+            datosFiltrados = nuevoArray!
         }catch{
             let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "FirstView") as! FirstViewController
             
             self.navigationController?.pushViewController(siguienteVista, animated: true)
         }
         
- 
-        
-        nuevoArray = nuevoArray!.filter{
-            let objetoPiso = $0 as![String:Any]
-            let s:String = objetoPiso["id"] as! String;
-            return(s == idsalon)
-        }
-        
         
         //paso 5: copiar el contenido del arreglo en el arreglo filtrado
-        datosFiltrados = nuevoArray!
+        
         
         //Paso 6: usar la vista actual para presentar los resultados de la búsqueda
         searchController.searchResultsUpdater = self
