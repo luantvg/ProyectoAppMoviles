@@ -56,7 +56,7 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let direccion = "http://martinmolina.com.mx/201813/data/SalonesPorPiso/FotosSalones.json"
+        let direccion = "http://martinmolina.com.mx/201813/novus2018/iCEDETEC/FotosSalones.json"
         
         
         
@@ -139,6 +139,8 @@ class ImagenesTableViewController: UITableViewController, UISearchResultsUpdatin
         
         return cell
     }
+    
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var indice = 0

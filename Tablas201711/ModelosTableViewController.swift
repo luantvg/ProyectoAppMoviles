@@ -56,7 +56,7 @@ class ModelosTableViewController: UITableViewController, UISearchResultsUpdating
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let direccion = "http://martinmolina.com.mx/201813/data/SalonesPorPiso/MaterialesSalones.json"
+        let direccion = "http://martinmolina.com.mx/201813/novus2018/iCEDETEC/MaterialesSalones.json"
         
         
         

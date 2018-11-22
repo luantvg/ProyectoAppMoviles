@@ -67,7 +67,9 @@ class FirstViewController: UIViewController {
     }
     
     
-    @IBAction func abrirMapas(_ sender: Any) {
+   
+        
+        /*
         
         let lat:CLLocationDegrees = 19.283523
         let long:CLLocationDegrees = -99.135497
@@ -87,8 +89,8 @@ class FirstViewController: UIViewController {
         mapItem.phoneNumber = "5554832025"
         
         mapItem.openInMaps(launchOptions: options)
-    }
-    
+ 
+        */
 
 }
 

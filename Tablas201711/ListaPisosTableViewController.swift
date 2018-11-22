@@ -29,7 +29,7 @@ class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdat
         self.tableView.reloadData()
     }
     
-    let direccion="http://martinmolina.com.mx/201813/data/pisos.json"
+    let direccion="http://martinmolina.com.mx/201813/novus2018/iCEDETEC/pisos.json"
     
     var nuevoArray:[Any]?
     

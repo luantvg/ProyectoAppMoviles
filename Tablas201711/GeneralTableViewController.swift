@@ -29,7 +29,7 @@ class GeneralTableViewController: UITableViewController , UISearchResultsUpdatin
         self.tableView.reloadData()
     }
     
-    let direccion="http://martinmolina.com.mx/201813/data/salonesV1.json"
+    let direccion="http://martinmolina.com.mx/201813/novus2018/iCEDETEC/salonesV1.json"
     
     var nuevoArray:[Any]?
     

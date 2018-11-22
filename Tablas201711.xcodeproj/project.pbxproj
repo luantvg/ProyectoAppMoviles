@@ -25,6 +25,8 @@
 		3B6EF1E2218B04E300D1DB9D /* ModelosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1E1218B04E300D1DB9D /* ModelosTableViewController.swift */; };
 		3B6EF1E4218B2B3F00D1DB9D /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */; };
 		3BB0FF39219864A400FCA763 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0FF38219864A400FCA763 /* Resnet50.mlmodel */; };
+		3BBFF24621A675D300519CE2 /* PanoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF24521A675D300519CE2 /* PanoTableViewController.swift */; };
+		3BBFF24821A67C9B00519CE2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF24721A67C9B00519CE2 /* MapViewController.swift */; };
 		7B385E0621877AA000901B55 /* CTPieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B385E0421877AA000901B55 /* CTPieSliceView.swift */; };
 		7B385E0721877AA000901B55 /* CTPanoramaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B385E0521877AA000901B55 /* CTPanoramaView.swift */; };
 		7B69A75521876A74008E3F46 /* PanoramicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69A75421876A74008E3F46 /* PanoramicViewController.swift */; };
@@ -69,6 +71,8 @@
 		3B6EF1E1218B04E300D1DB9D /* ModelosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelosTableViewController.swift; sourceTree = "<group>"; };
 		3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
 		3BB0FF38219864A400FCA763 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		3BBFF24521A675D300519CE2 /* PanoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoTableViewController.swift; sourceTree = "<group>"; };
+		3BBFF24721A67C9B00519CE2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7B385E0421877AA000901B55 /* CTPieSliceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPieSliceView.swift; sourceTree = "<group>"; };
 		7B385E0521877AA000901B55 /* CTPanoramaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPanoramaView.swift; sourceTree = "<group>"; };
 		7B69A75421876A74008E3F46 /* PanoramicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramicViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */,
 				356B4D421E5B8F94002DD52B /* SecondViewController.swift */,
 				356B4D441E5B8F94002DD52B /* Main.storyboard */,
+				3BBFF24721A67C9B00519CE2 /* MapViewController.swift */,
+				3BBFF24521A675D300519CE2 /* PanoTableViewController.swift */,
 				3B6EF1E1218B04E300D1DB9D /* ModelosTableViewController.swift */,
 				FAC30FB5214EE8C0000BE765 /* SalonesTableViewController.swift */,
 				356B4D471E5B8F94002DD52B /* cdtTec.xcassets */,
@@ -244,6 +250,7 @@
 				7B69A75521876A74008E3F46 /* PanoramicViewController.swift in Sources */,
 				045558AE218AA6D6003D9091 /* ARAssetsViewController.swift in Sources */,
 				045558B0218ADA22003D9091 /* ARVideoViewController.swift in Sources */,
+				3BBFF24621A675D300519CE2 /* PanoTableViewController.swift in Sources */,
 				3B6EF1E4218B2B3F00D1DB9D /* CheckInternet.swift in Sources */,
 				7B385E0721877AA000901B55 /* CTPanoramaView.swift in Sources */,
 				356B4D431E5B8F94002DD52B /* SecondViewController.swift in Sources */,
@@ -251,6 +258,7 @@
 				356B4D3F1E5B8F94002DD52B /* AppDelegate.swift in Sources */,
 				3BB0FF39219864A400FCA763 /* Resnet50.mlmodel in Sources */,
 				3B6EF1D9218AB24400D1DB9D /* GeneralTableViewController.swift in Sources */,
+				3BBFF24821A67C9B00519CE2 /* MapViewController.swift in Sources */,
 				3B6EF1E2218B04E300D1DB9D /* ModelosTableViewController.swift in Sources */,
 				3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */,
 				3988E57E21939A0C00909C7B /* PortalViewController.swift in Sources */,

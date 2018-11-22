@@ -56,7 +56,7 @@ class VideosTableViewController: UITableViewController, UISearchResultsUpdating 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let direccion = "http://martinmolina.com.mx/201813/data/SalonesPorPiso/VideosSalones.json"
+        let direccion = "http://martinmolina.com.mx/201813/novus2018/iCEDETEC/VideosSalones.json"
         
         
         

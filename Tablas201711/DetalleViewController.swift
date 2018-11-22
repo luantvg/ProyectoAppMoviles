@@ -22,9 +22,7 @@ class DetalleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        urlPanono = getPanono()
-                
+                        
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.style = UIActivityIndicatorView.Style.gray
@@ -91,43 +89,21 @@ class DetalleViewController: UIViewController {
     }
     
     @IBAction func MLAR(_ sender: Any) {
-    
+        activityIndicator.startAnimating()
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             
-            let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Portal") as! PortalViewController
+            let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Panoramicas") as! PanoTableViewController
             
             
             siguienteVista.idsalon = self.idsalon
-            siguienteVista.imgUrl = self.urlPanono
+            //siguienteVista.imgUrl = self.urlPanono
             
             self.navigationController?.pushViewController(siguienteVista, animated: true)
             
             self.activityIndicator.stopAnimating()
         }
     
-    }
-    
-    func getPanono() -> String {
-        
-        var nuevoArray:[Any]?
-
-        let direccion = "http://martinmolina.com.mx/201813/data/SalonesPorPiso/FotosSalones.json"
-        
-        let url = URL(string: direccion)
-        let datos = try? Data(contentsOf: url!)
-        
-        nuevoArray = try! JSONSerialization.jsonObject(with: datos! ) as? [Any]
-        
-        nuevoArray = nuevoArray!.filter{
-            let objetoPiso = $0 as![String:Any]
-            let s:String = objetoPiso["id"] as! String;
-            return(s == idsalon)
-        }
-        
-        
-        let objetoPiso = nuevoArray?[0] as! [String: Any]
-        
-        return objetoPiso["url"] as! String
     }
     
     /*
