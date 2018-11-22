@@ -61,10 +61,16 @@ class ListaPisosTableViewController: UITableViewController, UISearchResultsUpdat
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         //nuevoArray=(JSONParseArray(datosJSON) as NSArray) as! [Any]
-        
         let url = URL(string: direccion)
-        let datos = try? Data(contentsOf: url!)
-        nuevoArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
+        
+        do{
+            let datos = try Data(contentsOf: url!)
+            nuevoArray = try! JSONSerialization.jsonObject(with: datos) as? [Any]
+        }catch{
+            let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "FirstView") as! FirstViewController
+        
+            self.navigationController?.pushViewController(siguienteVista, animated: true)
+        }
         
         //paso 5: copiar el contenido del arreglo en el arreglo filtrado
         datosFiltrados = nuevoArray!

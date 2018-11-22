@@ -66,8 +66,29 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if CheckInternet.Connection(){
+            
+        }else{
+            self.Alert(Message: "Tu dispositivo no esta conectado a internet")
+        }
+    }
     
+    func Alert (Message: String){
+        let alert = UIAlertController(title: "Alerta", message: Message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: {(action) in
+            if CheckInternet.Connection(){
+                
+            }else{
+                self.Alert(Message: "Tu dispositivo no esta conectado a internet")
+            }
+        }))
+        self.present(alert,animated: true, completion: nil)
+    }
    
+    func closeApp(){
+        
+    }
         
         /*
         
