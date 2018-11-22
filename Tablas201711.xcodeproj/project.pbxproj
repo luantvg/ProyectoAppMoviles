@@ -96,6 +96,7 @@
 			children = (
 				7B385E0521877AA000901B55 /* CTPanoramaView.swift */,
 				7B385E0421877AA000901B55 /* CTPieSliceView.swift */,
+				3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */,
 				356B4D3D1E5B8F94002DD52B /* Tablas201711 */,
 				356B4D3C1E5B8F94002DD52B /* Products */,
 			);
@@ -115,7 +116,6 @@
 				3BB0FF38219864A400FCA763 /* Resnet50.mlmodel */,
 				356B4D3E1E5B8F94002DD52B /* AppDelegate.swift */,
 				356B4D401E5B8F94002DD52B /* FirstViewController.swift */,
-				3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */,
 				356B4D421E5B8F94002DD52B /* SecondViewController.swift */,
 				356B4D441E5B8F94002DD52B /* Main.storyboard */,
 				3BBFF24721A67C9B00519CE2 /* MapViewController.swift */,

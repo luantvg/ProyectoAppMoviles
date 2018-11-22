@@ -352,7 +352,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBB-F0-b9b">
-                                <rect key="frame" x="16" y="491" width="155" height="65"/>
+                                <rect key="frame" x="24" y="491" width="155" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="WKH-Vj-nV8"/>
                                 </constraints>
@@ -417,14 +417,14 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                             <constraint firstItem="ONH-14-vg0" firstAttribute="centerX" secondItem="gRW-JN-wyI" secondAttribute="centerX" id="Ess-L1-VwA"/>
                             <constraint firstAttribute="trailing" secondItem="HKf-ZF-gmd" secondAttribute="trailing" id="Fns-I0-4B5"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="trailing" secondItem="gRW-JN-wyI" secondAttribute="trailing" id="Gz1-Nv-xRo"/>
-                            <constraint firstItem="iBB-F0-b9b" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leadingMargin" id="S2C-cw-YaL"/>
+                            <constraint firstItem="iBB-F0-b9b" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leadingMargin" constant="8" id="S2C-cw-YaL"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="top" secondItem="Nud-UE-Pxg" secondAttribute="bottom" constant="36" id="Sa4-ot-UfQ"/>
                             <constraint firstItem="dhd-D3-76M" firstAttribute="leading" secondItem="9sQ-sG-7K8" secondAttribute="leadingMargin" constant="8" id="Tdx-Ti-gtC"/>
                             <constraint firstItem="mWs-8b-wPt" firstAttribute="trailing" secondItem="9sQ-sG-7K8" secondAttribute="trailingMargin" id="UYJ-5t-0I9"/>
                             <constraint firstItem="vAF-1i-mIa" firstAttribute="top" secondItem="iBB-F0-b9b" secondAttribute="bottom" constant="111" id="UfD-8V-hAa"/>
                             <constraint firstItem="dhd-D3-76M" firstAttribute="top" secondItem="mWs-8b-wPt" secondAttribute="bottom" constant="26" id="W1P-E7-fcl"/>
                             <constraint firstItem="gRW-JN-wyI" firstAttribute="trailing" secondItem="5NY-VK-t2S" secondAttribute="trailing" id="WbS-nn-LoT"/>
-                            <constraint firstItem="5NY-VK-t2S" firstAttribute="centerX" secondItem="iBB-F0-b9b" secondAttribute="centerX" constant="94" id="Wc4-70-wHV"/>
+                            <constraint firstItem="5NY-VK-t2S" firstAttribute="centerX" secondItem="iBB-F0-b9b" secondAttribute="centerX" constant="86" id="Wc4-70-wHV"/>
                             <constraint firstItem="gRW-JN-wyI" firstAttribute="leading" secondItem="5NY-VK-t2S" secondAttribute="leading" id="XK7-X0-1XP"/>
                             <constraint firstItem="fPL-b4-Cks" firstAttribute="leading" secondItem="mWs-8b-wPt" secondAttribute="leading" id="Y4J-hg-VNF"/>
                             <constraint firstItem="HKf-ZF-gmd" firstAttribute="leading" secondItem="gRW-JN-wyI" secondAttribute="leading" id="cXz-CV-UOr"/>
@@ -437,7 +437,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                             <constraint firstItem="mWs-8b-wPt" firstAttribute="baseline" secondItem="iBB-F0-b9b" secondAttribute="baseline" id="npg-Am-BDx"/>
                             <constraint firstItem="BND-Ms-jt3" firstAttribute="centerX" secondItem="5NY-VK-t2S" secondAttribute="centerX" id="npx-Za-aiX"/>
                             <constraint firstItem="fPL-b4-Cks" firstAttribute="baseline" secondItem="dhd-D3-76M" secondAttribute="baseline" id="qdj-ki-jrt"/>
-                            <constraint firstItem="mWs-8b-wPt" firstAttribute="leading" secondItem="iBB-F0-b9b" secondAttribute="trailing" constant="33" id="uK8-0j-Uej"/>
+                            <constraint firstItem="mWs-8b-wPt" firstAttribute="leading" secondItem="iBB-F0-b9b" secondAttribute="trailing" constant="25" id="uK8-0j-Uej"/>
                         </constraints>
                     </view>
                     <connections>
@@ -607,7 +607,6 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
         <!--Map View Controller-->
         <scene sceneID="Nfc-c3-8NV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mTk-zY-AV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="Mapas" id="hej-4C-5GP" customClass="MapViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cO6-bH-1U5"/>
@@ -664,6 +663,7 @@ Si quieres conocer todos los espacios disponibles para que puedas llevar a cabo 
                         <outlet property="Map" destination="9Pl-2z-FfF" id="2iZ-sQ-eao"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mTk-zY-AV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="232.80000000000001" y="-89.505247376311857"/>
         </scene>

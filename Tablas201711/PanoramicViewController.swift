@@ -16,6 +16,7 @@ class PanoramicViewController: UIViewController {
     var url:String=""
     let mygroup = DispatchGroup()
     var activityIndicator = UIActivityIndicatorView()
+    var imageToSave: UIImage? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +83,7 @@ class PanoramicViewController: UIViewController {
                             self.activityIndicator.stopAnimating()
                             self.panoramaView.image = image
                             // Do something with your image.
+                            self.imageToSave = image
                         }
                         
                     } else {
