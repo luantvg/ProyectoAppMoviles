@@ -24,9 +24,16 @@
 		3B6EF1DF218AFEEA00D1DB9D /* VideosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1DE218AFEEA00D1DB9D /* VideosTableViewController.swift */; };
 		3B6EF1E2218B04E300D1DB9D /* ModelosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1E1218B04E300D1DB9D /* ModelosTableViewController.swift */; };
 		3B6EF1E4218B2B3F00D1DB9D /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */; };
+		3B92CB7721AB37D100584B54 /* StyleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92CB7321AB37D100584B54 /* StyleGenerator.swift */; };
+		3B92CB7821AB37D100584B54 /* CalendarNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92CB7421AB37D100584B54 /* CalendarNotificationController.swift */; };
+		3B92CB7921AB37D100584B54 /* DatePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92CB7521AB37D100584B54 /* DatePickerControllerDelegate.swift */; };
+		3B92CB7A21AB37D100584B54 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92CB7621AB37D100584B54 /* CalendarViewController.swift */; };
+		3B92CB7C21AB486800584B54 /* CalendarioPrueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92CB7B21AB486800584B54 /* CalendarioPrueba.swift */; };
+		3B92CB7E21AB622B00584B54 /* AgendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92CB7D21AB622B00584B54 /* AgendarViewController.swift */; };
 		3BB0FF39219864A400FCA763 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0FF38219864A400FCA763 /* Resnet50.mlmodel */; };
 		3BBFF24621A675D300519CE2 /* PanoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF24521A675D300519CE2 /* PanoTableViewController.swift */; };
 		3BBFF24821A67C9B00519CE2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFF24721A67C9B00519CE2 /* MapViewController.swift */; };
+		541A51CEC9DADB7AB65CB4CF /* Pods_Tablas201711.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F690F9B3D20BA6AD481213 /* Pods_Tablas201711.framework */; };
 		7B385E0621877AA000901B55 /* CTPieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B385E0421877AA000901B55 /* CTPieSliceView.swift */; };
 		7B385E0721877AA000901B55 /* CTPanoramaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B385E0521877AA000901B55 /* CTPanoramaView.swift */; };
 		7B69A75521876A74008E3F46 /* PanoramicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69A75421876A74008E3F46 /* PanoramicViewController.swift */; };
@@ -70,6 +77,12 @@
 		3B6EF1DE218AFEEA00D1DB9D /* VideosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableViewController.swift; sourceTree = "<group>"; };
 		3B6EF1E1218B04E300D1DB9D /* ModelosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelosTableViewController.swift; sourceTree = "<group>"; };
 		3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		3B92CB7321AB37D100584B54 /* StyleGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGenerator.swift; sourceTree = "<group>"; };
+		3B92CB7421AB37D100584B54 /* CalendarNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarNotificationController.swift; sourceTree = "<group>"; };
+		3B92CB7521AB37D100584B54 /* DatePickerControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerControllerDelegate.swift; sourceTree = "<group>"; };
+		3B92CB7621AB37D100584B54 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		3B92CB7B21AB486800584B54 /* CalendarioPrueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioPrueba.swift; sourceTree = "<group>"; };
+		3B92CB7D21AB622B00584B54 /* AgendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarViewController.swift; sourceTree = "<group>"; };
 		3BB0FF38219864A400FCA763 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		3BBFF24521A675D300519CE2 /* PanoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoTableViewController.swift; sourceTree = "<group>"; };
 		3BBFF24721A67C9B00519CE2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +90,9 @@
 		7B385E0521877AA000901B55 /* CTPanoramaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPanoramaView.swift; sourceTree = "<group>"; };
 		7B69A75421876A74008E3F46 /* PanoramicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramicViewController.swift; sourceTree = "<group>"; };
 		7B69A75C21877714008E3F46 /* CTPanoramaView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CTPanoramaView.xcodeproj; path = "../../Downloads/CTPanoramaView-master/CTPanoramaView.xcodeproj"; sourceTree = "<group>"; };
+		90C29F5B5203F0003B70D900 /* Pods-Tablas201711.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tablas201711.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tablas201711/Pods-Tablas201711.debug.xcconfig"; sourceTree = "<group>"; };
+		B8F690F9B3D20BA6AD481213 /* Pods_Tablas201711.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tablas201711.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5C83291F72D93100995909 /* Pods-Tablas201711.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tablas201711.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tablas201711/Pods-Tablas201711.release.xcconfig"; sourceTree = "<group>"; };
 		FAC30FB5214EE8C0000BE765 /* SalonesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541A51CEC9DADB7AB65CB4CF /* Pods_Tablas201711.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +116,8 @@
 				3B6EF1E3218B2B3F00D1DB9D /* CheckInternet.swift */,
 				356B4D3D1E5B8F94002DD52B /* Tablas201711 */,
 				356B4D3C1E5B8F94002DD52B /* Products */,
+				E4BA8BE7C57D7D342093BBFF /* Pods */,
+				F7BC5E75A1D0B407BC5C0380 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +137,12 @@
 				356B4D401E5B8F94002DD52B /* FirstViewController.swift */,
 				356B4D421E5B8F94002DD52B /* SecondViewController.swift */,
 				356B4D441E5B8F94002DD52B /* Main.storyboard */,
+				3B92CB7D21AB622B00584B54 /* AgendarViewController.swift */,
+				3B92CB7421AB37D100584B54 /* CalendarNotificationController.swift */,
+				3B92CB7621AB37D100584B54 /* CalendarViewController.swift */,
+				3B92CB7521AB37D100584B54 /* DatePickerControllerDelegate.swift */,
+				3B92CB7321AB37D100584B54 /* StyleGenerator.swift */,
+				3B92CB7B21AB486800584B54 /* CalendarioPrueba.swift */,
 				3BBFF24721A67C9B00519CE2 /* MapViewController.swift */,
 				3BBFF24521A675D300519CE2 /* PanoTableViewController.swift */,
 				3B6EF1E1218B04E300D1DB9D /* ModelosTableViewController.swift */,
@@ -148,6 +173,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E4BA8BE7C57D7D342093BBFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90C29F5B5203F0003B70D900 /* Pods-Tablas201711.debug.xcconfig */,
+				EC5C83291F72D93100995909 /* Pods-Tablas201711.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7BC5E75A1D0B407BC5C0380 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8F690F9B3D20BA6AD481213 /* Pods_Tablas201711.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 356B4D4F1E5B8F94002DD52B /* Build configuration list for PBXNativeTarget "Tablas201711" */;
 			buildPhases = (
+				069CE13732E2354346AA5630 /* [CP] Check Pods Manifest.lock */,
 				356B4D371E5B8F94002DD52B /* Sources */,
 				356B4D381E5B8F94002DD52B /* Frameworks */,
 				356B4D391E5B8F94002DD52B /* Resources */,
+				8AA2E04AA6F8490F336C468F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,16 +284,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		069CE13732E2354346AA5630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tablas201711-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AA2E04AA6F8490F336C468F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tablas201711/Pods-Tablas201711-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CalendarKit/CalendarKit.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Neon/Neon.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalendarKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Neon.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tablas201711/Pods-Tablas201711-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		356B4D371E5B8F94002DD52B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B92CB7921AB37D100584B54 /* DatePickerControllerDelegate.swift in Sources */,
 				3B6EF1DF218AFEEA00D1DB9D /* VideosTableViewController.swift in Sources */,
 				3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */,
 				7B69A75521876A74008E3F46 /* PanoramicViewController.swift in Sources */,
 				045558AE218AA6D6003D9091 /* ARAssetsViewController.swift in Sources */,
+				3B92CB7A21AB37D100584B54 /* CalendarViewController.swift in Sources */,
+				3B92CB7C21AB486800584B54 /* CalendarioPrueba.swift in Sources */,
 				045558B0218ADA22003D9091 /* ARVideoViewController.swift in Sources */,
+				3B92CB7E21AB622B00584B54 /* AgendarViewController.swift in Sources */,
 				3BBFF24621A675D300519CE2 /* PanoTableViewController.swift in Sources */,
 				3B6EF1E4218B2B3F00D1DB9D /* CheckInternet.swift in Sources */,
 				7B385E0721877AA000901B55 /* CTPanoramaView.swift in Sources */,
@@ -258,9 +357,11 @@
 				356B4D3F1E5B8F94002DD52B /* AppDelegate.swift in Sources */,
 				3BB0FF39219864A400FCA763 /* Resnet50.mlmodel in Sources */,
 				3B6EF1D9218AB24400D1DB9D /* GeneralTableViewController.swift in Sources */,
+				3B92CB7721AB37D100584B54 /* StyleGenerator.swift in Sources */,
 				3BBFF24821A67C9B00519CE2 /* MapViewController.swift in Sources */,
 				3B6EF1E2218B04E300D1DB9D /* ModelosTableViewController.swift in Sources */,
 				3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */,
+				3B92CB7821AB37D100584B54 /* CalendarNotificationController.swift in Sources */,
 				3988E57E21939A0C00909C7B /* PortalViewController.swift in Sources */,
 				7B385E0621877AA000901B55 /* CTPieSliceView.swift in Sources */,
 				356B4D411E5B8F94002DD52B /* FirstViewController.swift in Sources */,
@@ -402,6 +503,7 @@
 		};
 		356B4D501E5B8F94002DD52B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C29F5B5203F0003B70D900 /* Pods-Tablas201711.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -419,6 +521,7 @@
 		};
 		356B4D511E5B8F94002DD52B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC5C83291F72D93100995909 /* Pods-Tablas201711.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

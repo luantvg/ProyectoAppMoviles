@@ -106,6 +106,22 @@ class DetalleViewController: UIViewController {
     
     }
     
+    @IBAction func agendar(_ sender: Any) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            
+            let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Agendar") as! AgendarViewController
+            
+            
+            //siguienteVista.nombre = self.nombre
+            //siguienteVista.imgUrl = self.urlPanono
+            
+            self.navigationController?.pushViewController(siguienteVista, animated: true)
+            
+            self.activityIndicator.stopAnimating()
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 

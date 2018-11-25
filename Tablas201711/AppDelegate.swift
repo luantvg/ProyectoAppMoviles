@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CalendarKit
 import CoreLocation
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         locationManager = CLLocationManager()
         locationManager?.requestWhenInUseAuthorization()
         // Override point for customization after application launch.
+        
+       /*
+        let dayViewController = CalendarViewController()
+        let navigationController = UINavigationController(rootViewController: dayViewController)
+            window?.rootViewController = navigationController
+         */
+        
+        
         return true
+ 
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
