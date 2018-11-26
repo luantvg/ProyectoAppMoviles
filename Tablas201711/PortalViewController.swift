@@ -38,7 +38,7 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
         let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
         if !hitTestResult.isEmpty{
             //cargar la escena
-            self.addPortal(hitTestResult: hitTestResult.first!)
+            self.setupScene()
         }
         else{
             // no hubo resultado
@@ -60,6 +60,69 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
         portalNode?.position = SCNVector3(planeXposition,planeYposition,planeZposition)
         self.sceneView.scene.rootNode.addChildNode(portalNode!)
         
+    }
+    
+    func setupScene() {
+        let node = SCNNode()
+        node.position = SCNVector3.init(0, 0, 0)
+        
+        let leftWall = createBox(isDoor: false, whichSide: "left")
+        leftWall.position = SCNVector3.init((-length / 2) + width, 0, -1.4)
+        leftWall.eulerAngles = SCNVector3.init(0, 180.0.degreesToRadians, 0)
+        
+        let rightWall = createBox(isDoor: false, whichSide: "right")
+        rightWall.position = SCNVector3.init((length / 2) - width, 0, -1.4)
+        
+        let topWall = createBox(isDoor: false, whichSide: "top")
+        topWall.position = SCNVector3.init(0, (height / 2) - width, -1.4)
+        topWall.eulerAngles = SCNVector3.init(90.0.degreesToRadians, 0, 90.0.degreesToRadians)
+        
+        let bottomWall = createBox(isDoor: false, whichSide: "bottom")
+        bottomWall.position = SCNVector3.init(0, (-height / 2) + width, -1.4)
+        bottomWall.eulerAngles = SCNVector3.init(-90.0.degreesToRadians, 0, -90.0.degreesToRadians)
+        
+        let backWall = createBox(isDoor: false, whichSide: "front")
+        backWall.position = SCNVector3.init(0, 0, (-length / 2) + width - 1.4)
+        backWall.eulerAngles = SCNVector3.init(0, 90.0.degreesToRadians, 0)
+        
+        let leftDoorSide = createBox(isDoor: true, whichSide: "left")
+        leftDoorSide.position = SCNVector3.init((-length / 2 + width) + (doorLength / 2), 0, (length / 2) - width - 1.4)
+        leftDoorSide.eulerAngles = SCNVector3.init(0, -90.0.degreesToRadians, 0)
+        
+        let rightDoorSide = createBox(isDoor: true, whichSide: "right")
+        rightDoorSide.position = SCNVector3.init((length / 2 - width) - (doorLength / 2), 0, (length / 2) - width - 1.4)
+        rightDoorSide.eulerAngles = SCNVector3.init(0, -90.0.degreesToRadians, 0)
+        
+        /*let sphereCool = SCNSphere(radius: width)
+         sphereCool.firstMaterial?.diffuse.contents = UIImage(named: "Venice")
+         
+         let sphereCoolNode = SCNNode(geometry: sphereCool)
+         
+         sphereCoolNode.position = SCNVector3.init(0,0,0)
+         
+         self.sceneView.scene.rootNode.addChildNode(sphereCoolNode)*/
+        
+        //Create Light
+        
+        
+        let light = SCNLight();
+        light.type = SCNLight.LightType.omni;
+        
+        let lightNode = SCNNode()
+        lightNode.light = light
+        lightNode.position = SCNVector3.init(0, 0.0, -1.4)
+        node.addChildNode(lightNode)
+        
+        //Adding Nodes to Main Node
+        node.addChildNode(leftWall)
+        node.addChildNode(rightWall)
+        node.addChildNode(topWall)
+        node.addChildNode(bottomWall)
+        node.addChildNode(backWall)
+        node.addChildNode(leftDoorSide)
+        node.addChildNode(rightDoorSide)
+        
+        self.sceneView.scene.rootNode.addChildNode(node)
     }
 
     
@@ -172,7 +235,7 @@ class PortalViewController: UIViewController , ARSCNViewDelegate {
         
         // Set the scene to the view
         //sceneView.scene = scene
-        self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        //self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         self.configuration.planeDetection = .horizontal
         self.sceneView.session.run(configuration)
         self.sceneView.delegate = self
