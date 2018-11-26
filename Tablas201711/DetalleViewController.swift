@@ -112,7 +112,7 @@ class DetalleViewController: UIViewController {
             let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Agendar") as! AgendarViewController
             
             
-            //siguienteVista.nombre = self.nombre
+            siguienteVista.salon = self.nombre
             //siguienteVista.imgUrl = self.urlPanono
             
             self.navigationController?.pushViewController(siguienteVista, animated: true)
