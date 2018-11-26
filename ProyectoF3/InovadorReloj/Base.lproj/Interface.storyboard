@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InovadorReloj" customModuleProvider="target">
+                    <items>
+                        <button width="136" height="53" alignment="left" title="Button" id="Enj-9Y-neZ">
+                            <connections>
+                                <action selector="botonHola" destination="AgC-eL-Hgc" id="uVT-Um-6CW"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="dYD-Rm-4iJ"/>
+                        <label width="136" height="58" alignment="left" text="Label" id="0JC-XH-1PN"/>
+                    </items>
+                    <connections>
+                        <outlet property="holaTexto" destination="0JC-XH-1PN" id="pcz-Af-bOn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="151.11111111111111" y="156.62436548223349"/>
+        </scene>
+    </scenes>
+</document>
