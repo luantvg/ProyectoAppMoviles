@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0454063C21ABBFE90033BC3A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454063B21ABBFE90033BC3A /* Extensions.swift */; };
 		045558AE218AA6D6003D9091 /* ARAssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045558AD218AA6D6003D9091 /* ARAssetsViewController.swift */; };
 		045558B0218ADA22003D9091 /* ARVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045558AF218ADA22003D9091 /* ARVideoViewController.swift */; };
 		3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0454063B21ABBFE90033BC3A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = "../../../../Downloads/ARKit-Portal-master/Portal3/Extensions.swift"; sourceTree = "<group>"; };
 		045558AD218AA6D6003D9091 /* ARAssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAssetsViewController.swift; sourceTree = "<group>"; };
 		045558AF218ADA22003D9091 /* ARVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVideoViewController.swift; sourceTree = "<group>"; };
 		3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */,
 				3546B96D1E5B96FD0035B84F /* ListaPisosTableViewController.swift */,
 				3B6EF1D8218AB24400D1DB9D /* GeneralTableViewController.swift */,
+				0454063B21ABBFE90033BC3A /* Extensions.swift */,
 				3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */,
 				3988E57D21939A0C00909C7B /* PortalViewController.swift */,
 				3B6EF1DC218AE1E500D1DB9D /* ImagenesTableViewController.swift */,
@@ -367,6 +370,7 @@
 				356B4D411E5B8F94002DD52B /* FirstViewController.swift in Sources */,
 				FAC30FB6214EE8C0000BE765 /* SalonesTableViewController.swift in Sources */,
 				3546B96E1E5B96FD0035B84F /* ListaPisosTableViewController.swift in Sources */,
+				0454063C21ABBFE90033BC3A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
